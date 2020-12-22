@@ -1,0 +1,16 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/layout';
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import './components/navbar';
+@import './components/button';
+@import './components/banner';
+@import './components/about';
+@import './components/founder';
+@import './components/team';
+@import './components/gallery';

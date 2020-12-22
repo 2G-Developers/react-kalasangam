@@ -1,0 +1,118 @@
+.banner {
+    height: 100vh;
+    max-height: 1100px;
+    position: relative;
+    // overflow: hidden;
+
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        // display: flex;
+        // justify-content: center;
+        // overflow: hidden;
+        // align-items: center;
+        position: relative;
+    }
+
+    &__slide {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        z-index: 1;
+    }
+
+    &__slider {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100vh;
+            bottom: 0vh;
+            left: 0;
+            overflow: hidden;
+            opacity: .4;
+            // background: linear-gradient(0deg, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .6) 100%);
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__navigation {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        display: flex;
+        z-index: 10;
+    }
+
+    &__back {
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        cursor: pointer;
+        background: #000d1a;
+        border-radius: 50px;
+        padding: 10px;
+        margin-right: 1rem;
+        user-select: none;
+        transition: .3s;
+
+        &:hover {
+            background: #cd853f;
+            transform: scale(1.05);
+        }
+    }
+
+    &__forward {
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        cursor: pointer;
+        background: #000d1a;
+        border-radius: 50px;
+        padding: 10px;
+        margin-right: 1rem;
+        user-select: none;
+        transition: .3s;
+
+        &:hover {
+            background: #cd853f;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.slick-slider {
+    height: 100%;
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-slide {
+    display: flex !important;
+}
+
+.slick-slide > div:first-child{
+    width: 100%;
+    height: 100%;
+}
+
+.slick-track {
+    display: flex !important;
+    height: 100%;
+}
