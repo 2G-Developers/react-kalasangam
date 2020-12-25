@@ -2,7 +2,7 @@ import * as React from "react"
 import About from "../components/About"
 import Banner from "../components/Banner"
 import Founder from "../components/Founder"
-import Navbar from "../components/Navbar"
+// import Navbar from "../components/Navbar"
 import Team from '../components/Team'
 import { Sliderdata } from "../data/SliderData"
 import { GalleryData } from "../data/GalleryData"
