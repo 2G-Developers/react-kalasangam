@@ -18,7 +18,7 @@ const IndexPage = () => {
   return (
     <main>
       <title>Home Page</title>
-      <Navbar />
+      {/* <Navbar /> */}
       <Banner slides={Sliderdata} />
       <About />
       <Founder />
