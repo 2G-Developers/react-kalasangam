@@ -9,7 +9,7 @@ const About = () => {
                 <div className="row">
                     <div className="about__wrapper">
                         <div className="about__content">
-                            <div className="about__heading">
+                            <div className="about__heading desktop">
                                 <h1>About KalasangamAG</h1>
                             </div>
 
@@ -22,7 +22,10 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="about__wrapper">
+                    <div className="about__wrapper about__order">
+                        <div className="about__heading mobile">
+                            <h1>About KalasangamAG</h1>
+                        </div>
                         <div className="about__figure">
                             <img src={TeamImage} alt="Team" className="about__image" />
                         </div>

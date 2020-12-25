@@ -8,6 +8,9 @@ const Founder = () => {
             <div className="container">
                 <div className="row">
                     <div className="founder__wrapper">
+                        <div className="founder__heading mobile">
+                            <h1>Anushree Gour</h1>
+                        </div>
                         <div className="founder__figure" style={{backgroundImage: `url(${FounderImage})`}}>
                             {/* <img src={FounderImage} alt="Founder" className="founder__image" /> */}
                         </div>
@@ -15,7 +18,7 @@ const Founder = () => {
 
                     <div className="founder__wrapper">
                         <div className="founder__content">
-                            <div className="founder__heading">
+                            <div className="founder__heading desktop">
                                 <h1>Anushree Gour</h1>
                             </div>
 

@@ -1,6 +1,10 @@
 .about {
     position: relative;
-    padding: 5.625rem 0;
+    padding-top: 5.625rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 5.625rem 0;
+    }
 
     &__wrapper {
         position: relative;
@@ -8,15 +12,25 @@
         padding-right: 15px;
         width: 100%;
         min-height: 1px;
+        height: 100%;
 
         @media screen and (min-width: 768px) {
             flex: 0 0 50%;
             max-width: 50%;
+            height: unset;
         }
 
         @media screen and (min-width: 992px) {
             padding-left: 4rem;
             padding-right: 4rem;
+        }
+    }
+
+    &__order {
+        order: -1;
+
+        @media screen and (min-width: 768px) {
+            order: 0;
         }
     }
 
@@ -59,6 +73,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 2.5rem;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: unset;
+        }
     }
 
     &__content {

@@ -1,0 +1,103 @@
+.event {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 5.625rem 0;
+
+    &::before {
+        content: "";
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(164, 86, 152, 0.308) 0%, rgba(242, 77, 179, 0.527) 100%);
+    }
+
+    &__card {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    &__box {
+        padding: 30px 20px;
+        border-radius: 5px;
+        background: rgb(255, 255, 255) none repeat scroll 0 0;
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__picture {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+
+            @media screen and (min-width: 768px) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    &__detail {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-evenly;
+        
+        @media screen and (min-width: 768px) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    &__title {
+        color: #c6185d;
+        font-size: 1rem;
+        font-weight: 500;
+        // margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+    }
+
+    &__date {
+        color: #646a7c;
+    }
+
+    &__cta {
+        border: 3px solid #f5f2f8;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 5px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #c6185d;
+        text-decoration: none;
+    }
+}

@@ -6,8 +6,12 @@ import Navbar from "../components/Navbar"
 import Team from '../components/Team'
 import { Sliderdata } from "../data/SliderData"
 import { GalleryData } from "../data/GalleryData"
+import { TeamData } from "../data/TeamData"
 import '../styles/main.scss'
 import Gallery from "../components/Gallery"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
+import Event from "../components/Event"
 
 // markup
 const IndexPage = () => {
@@ -18,8 +22,11 @@ const IndexPage = () => {
       <Banner slides={Sliderdata} />
       <About />
       <Founder />
-      <Team />
+      <Team teams={TeamData} />
       <Gallery gallery={GalleryData} />
+      <Event />
+      <Contact />
+      <Footer />
     </main>
   )
 }

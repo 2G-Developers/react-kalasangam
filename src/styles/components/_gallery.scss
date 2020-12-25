@@ -51,12 +51,16 @@
     }
 
     &__heading {
-        font-size: clamp(1.165rem, 6vw, 2.625rem);
+        font-size: clamp(1.165rem, 6vw, 2.325rem);
         font-weight: 700;
         line-height: 52px;
         text-align: left;
         color: #1E0E62;
         margin-bottom: 2.5rem;
+
+        h1 {
+            white-space: nowrap;
+        }
     }
 
     &__heading-wrapper {
