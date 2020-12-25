@@ -44,7 +44,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="contact__wrapper">
+                    <div className="contact__wrapper contact__wrapper--secondary">
                         <div className="contact__container">
 
                             <div className="gallery__heading-wrapper">
