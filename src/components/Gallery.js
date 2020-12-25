@@ -83,7 +83,7 @@ const Gallery = ({gallery}) => {
                             }
                         </Slider>
                     </div>
-                    <div className="gallery__wrapper">
+                    <div className="gallery__wrapper tablet-flex">
                         <Slider {...settings3}>
                             {
                                 potraitThree.map((slide, index) => (

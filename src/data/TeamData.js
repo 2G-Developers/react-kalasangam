@@ -7,28 +7,28 @@ export const TeamData = [
     {
         name: 'Arpitha Ravi',
         image: UserOne,
-        position: 'Core team Members',
+        position: 'Faculty',
         facebook: '',
         instagram: ''
     },
     {
         name: 'Ishita Tomer',
         image: UserTwo,
-        position: 'Core team Members',
+        position: 'Faculty',
         facebook: '',
         instagram: ''
     },
     {
-        name: 'Preethi Kala Balasubramanian',
+        name: 'Vineetha Rajendran',
         image: UserThree,
-        position: 'Core team Members',
+        position: 'Faculty',
         facebook: '',
         instagram: ''
     },
     {
         name: 'Sangeetha Shivaprasad',
         image: UserFour,
-        position: 'Core team Members',
+        position: 'Faculty',
         facebook: '',
         instagram: ''
     },

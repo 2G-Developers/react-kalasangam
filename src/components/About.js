@@ -14,9 +14,10 @@ const About = () => {
                             </div>
 
                             <p className="about__paragraph">
-                            StudioKalasangamAG is a group of vivacious individuals from Erlangen, Germany bonded closely together by their common love for dancing. The group spearheaded by Anushree Gour started making its presence felt in 2017. Three years since its inception, we have now grown to a dream team consisting of dancers, choreographers and editors. We started spreading our wings by performing in cities close to Erlangen and gradually moving on to setting footprints all across Germany.
+                            StudioKalaSangam is a group of vivacious individuals from Germany bonded closely together by their common love for dancing. The group spearheaded by Anushree Gour started making its presence felt in 2017. Since its inception, the team has now grown into a group consisting of enthusiastic talented dancers and choreographers. The team has been encouraged and provided with many amazing opportunities from the onset. 
                             </p>
-
+                            {/* It takes pride in saying that these opportunities resulted in being fruitful and helped us win the hearts of many audiences throughout, which made the journey exceptional.
+Starting from stage performances for live audiences to conducting workshops, online dance classes, organising dance flash mobs and much more. The team has never looked back and it's taking a step towards being more successful everyday. */}
                             <div className="about__cta">
                                 <Link to="/" className="about__button">Read More</Link>
                             </div>

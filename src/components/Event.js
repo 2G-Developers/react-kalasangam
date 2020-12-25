@@ -6,7 +6,15 @@ const Event = () => {
     return (
         <section className="event" style={{backgroundImage: `url(${Dancers})`}}>
             <div className="container">
-                <div className="row">
+                <div className="gallery__heading-wrapper">
+                    <div className="gallery__heading">
+                        <h1>Event</h1>
+                    </div>
+                    <div className="gallery__sub-heading">
+                        <h3>They say a picture speaks a thousand words.</h3>
+                    </div>
+                </div>
+                <div className="row event__row">
                     <div className="event__card">
                         <div className="event__box">
                             <div className="event__picture">

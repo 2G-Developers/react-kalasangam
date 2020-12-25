@@ -45,3 +45,13 @@
         display: block !important;
     }
 }
+
+.tablet-flex {
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+
+    @media (min-width: 992px) {
+        display: flex !important;
+    }
+}
