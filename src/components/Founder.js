@@ -1,28 +1,54 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {Link} from 'gatsby'
 import FounderImage from '../images/founder.jpg'
+import {gsap} from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
 
 const Founder = () => {
+
+    useEffect(() => {
+        gsap.from('.founder__animate', {
+            scrollTrigger: '.founder__animate',
+            duration: 1,
+            opacity: 0,
+            y: -150,
+            stagger: 0.3,
+            delay: 0.5
+        })
+
+        gsap.from('.founder__animate-img', {
+            scrollTrigger: '.founder__animate',
+            duration: 1,
+            opacity: 0,
+            y: -150,
+            stagger: 0.1,
+            delay: 0.2
+        })
+    }, [])
+
     return (
         <section className="founder">
             <div className="container">
                 <div className="row">
                     <div className="founder__wrapper">
-                        <div className="founder__heading mobile">
+                        <div className="founder__heading mobile founder__animate">
                             <h1>Anushree Gour</h1>
                         </div>
-                        <div className="founder__figure" style={{backgroundImage: `url(${FounderImage})`}}>
+                        <div className="founder__figure founder__animate-img" style={{backgroundImage: `url(${FounderImage})`}}>
                             {/* <img src={FounderImage} alt="Founder" className="founder__image" /> */}
                         </div>
                     </div>
 
                     <div className="founder__wrapper">
                         <div className="founder__content">
-                            <div className="founder__heading desktop">
+                            <div className="founder__heading desktop founder__animate">
                                 <h1>Anushree Gour</h1>
                             </div>
 
-                            <p className="founder__paragraph">
+                            <p className="founder__paragraph founder__animate">
                             I began dancing at a very young age and have been cherishing it since then!
 With having more than 15 yrs of experience in dancing and choreography, i have now reached a point where i established my own dance studio in germany.
 
@@ -39,7 +65,7 @@ I believe dance is like a long lasting journey and there is never an end to it. 
 DEDICATE a DAY to DANCE!
                             </p> */}
 
-                            <div className="founder__cta">
+                            <div className="founder__cta founder__animate">
                                 <Link to="/" className="founder__button">Read More</Link>
                             </div>
                         </div>
