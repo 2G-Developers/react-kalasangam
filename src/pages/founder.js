@@ -3,6 +3,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Page from '../components/Page'
 import {FounderPageData} from '../data/FounderPageData'
+import '../styles/main.scss'
 
 const founder = () => {
     return (

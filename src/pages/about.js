@@ -3,6 +3,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Page from '../components/Page'
 import {AboutPageData} from '../data/AboutPageData'
+import '../styles/main.scss'
 
 const about = () => {
     return (
