@@ -6,16 +6,16 @@ const Event = () => {
     return (
         <section className="event" style={{backgroundImage: `url(${Dancers})`}}>
                 <div className="gallery__heading-wrapper">
-                    <div className="gallery__heading gallery__heading--secondary">
+                    <div className="gallery__heading gallery__heading--secondary event__animate">
                         <h1>Event</h1>
                     </div>
-                    <div className="gallery__sub-heading gallery__sub-heading--secondary">
+                    <div className="gallery__sub-heading gallery__sub-heading--secondary event__animate">
                         <h3>They say a picture speaks a thousand words.</h3>
                     </div>
                 </div>
             <div className="container">
                 <div className="row event__row">
-                    <div className="event__card">
+                    <div className="event__card event__animate-card">
                         <div className="event__box">
                             <div className="event__picture">
                                 <img src={Dance} alt="Dance"/>
@@ -27,7 +27,7 @@ const Event = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="event__card">
+                    <div className="event__card event__animate-card">
                         <div className="event__box">
                             <div className="event__picture">
                                 <img src={Dance} alt="Dance"/>
@@ -39,7 +39,7 @@ const Event = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="event__card">
+                    <div className="event__card event__animate-card">
                         <div className="event__box">
                             <div className="event__picture">
                                 <img src={Dance} alt="Dance"/>
@@ -51,7 +51,7 @@ const Event = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="event__card">
+                    <div className="event__card event__animate-card">
                         <div className="event__box">
                             <div className="event__picture">
                                 <img src={Dance} alt="Dance"/>

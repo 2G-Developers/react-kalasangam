@@ -43,13 +43,13 @@ const Team = ({teams, dark}) => {
             <div className="container">
                 <div className="gallery__heading-wrapper">
                     <div className="gallery__heading team__animate">
-                        <h1>Team</h1>
+                        <h1>Faculty</h1>
                     </div>
                     <div className="gallery__sub-heading team__animate">
-                        <h3>Meet our awesome team</h3>
+                        <h3>Meet our talented faculty</h3>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row team__row">
                     <Slider {...settings}>
                         {
                             teams.map((team, index) => (

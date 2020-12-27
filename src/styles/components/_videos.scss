@@ -1,0 +1,32 @@
+.videos-showcase {
+    position: relative;
+    padding-bottom: 5.625rem;
+
+    &__card {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 992px) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+
+    &__youtube {
+        height: 300px !important;
+
+        @media screen and (min-width: 768px) {
+            height: 600px !important;
+        }
+    }
+}

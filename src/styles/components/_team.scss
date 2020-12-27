@@ -31,6 +31,13 @@
         padding: 5.625rem 0;
     }
 
+    &__row {
+        @media screen and (min-width: 992px) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
     &__card {
         position: relative;
         min-height: 1px;
@@ -38,10 +45,6 @@
         padding-right: 15px;
         width: 100%;
 
-        // @media screen and (min-width: 768px) {
-        //     flex: 0 0 33.33333%;
-        //     max-width: 33.33333%;
-        // }
     }
 
     &__profile {

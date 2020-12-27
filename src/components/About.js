@@ -1,6 +1,8 @@
 import React from 'react'
 import TeamImage from '../images/7-edit.jpg'
 import {Link} from 'gatsby'
+// import { FaFacebookF } from 'react-icons/fa'
+// import { GrInstagram } from 'react-icons/gr'
 
 const About = ({dark}) => {
     
@@ -12,16 +14,15 @@ const About = ({dark}) => {
                     <div className="about__wrapper">
                         <div className="about__content">
                             <div className="about__heading desktop about__animate">
-                                <h1>About KalasangamAG</h1>
+                                <h1>About StudioKalasangam</h1>
                             </div>
 
                             <p className="about__paragraph about__animate">
                             StudioKalaSangam is a group of vivacious individuals from Germany bonded closely together by their common love for dancing. The group spearheaded by Anushree Gour started making its presence felt in 2017. Since its inception, the team has now grown into a group consisting of enthusiastic talented dancers and choreographers. The team has been encouraged and provided with many amazing opportunities from the onset. 
                             </p>
-                            {/* It takes pride in saying that these opportunities resulted in being fruitful and helped us win the hearts of many audiences throughout, which made the journey exceptional.
-Starting from stage performances for live audiences to conducting workshops, online dance classes, organising dance flash mobs and much more. The team has never looked back and it's taking a step towards being more successful everyday. */}
+                            
                             <div className="about__cta about__animate">
-                                <Link to="/" className="about__button">Read More</Link>
+                                <Link to="/about" className="about__button">Read More</Link>
                             </div>
                         </div>
                     </div>
@@ -31,6 +32,13 @@ Starting from stage performances for live audiences to conducting workshops, onl
                         </div>
                         <div className="about__figure">
                             <img src={TeamImage} alt="Team" className="about__image about__animate-img" />
+
+                            {/* <div className="about__overlay">
+                                <div className="about__icon">
+                                    <a href="/" className="about__link" aria-label="social media"><FaFacebookF /></a>
+                                    <a href="/" className="about__link" aria-label="social media"><GrInstagram /></a>
+                                </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -106,7 +106,7 @@ const Gallery = ({gallery, dark}) => {
                     </div>
 
                     <div className="founder__cta">
-                        <Link to="/" className="founder__button gallery__animate">View More</Link>
+                        <Link to="/gallery" className="founder__button gallery__animate">View More</Link>
                     </div>
                 </div>
             </div>
