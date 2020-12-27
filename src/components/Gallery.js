@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import {Link} from 'gatsby'
 
-const Gallery = ({gallery}) => {
+const Gallery = ({gallery, dark}) => {
     const settings = {
         dots: false,
         infinite: true,
@@ -28,24 +28,24 @@ const Gallery = ({gallery}) => {
     const landscapeThree = landscapeSlide.slice(5)
 
     return (
-        <section className="gallery">
+        <section className={dark ? 'gallery gallery--dark': 'gallery'}>
             <div className="container">
-                <div className="gallery__heading-wrapper">
-                    <div className="gallery__heading">
-                        <h1>Gallery</h1>
+                    <div className="gallery__heading-wrapper">
+                        <div className="gallery__heading gallery__animate">
+                            <h1>Gallery</h1>
+                        </div>
+                        <div className="gallery__sub-heading gallery__animate">
+                            <h3>They say a picture speaks a thousand words.</h3>
+                            <h3>Take a scroll through our memory lane.</h3>
+                        </div>
                     </div>
-                    <div className="gallery__sub-heading">
-                        <h3>They say a picture speaks a thousand words.</h3>
-                        <h3>Take a scroll through our memory lane.</h3>
-                    </div>
-                </div>
                 <div className="row gallery__row">
                     <div className="gallery__wrapper">
                         <Slider {...settings}>
                             {
                                 potraitOne.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__potrait" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
                                     </div>
                                 ))
                             }
@@ -55,7 +55,7 @@ const Gallery = ({gallery}) => {
                             {
                                 landscapeOne.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__landscape" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
                                     </div>
                                 ))
                             }
@@ -67,7 +67,7 @@ const Gallery = ({gallery}) => {
                             {
                                 landscapeTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__landscape" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
                                     </div>
                                 ))
                             }
@@ -77,7 +77,7 @@ const Gallery = ({gallery}) => {
                             {
                                 potraitTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__potrait" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
                                     </div>
                                 ))
                             }
@@ -88,7 +88,7 @@ const Gallery = ({gallery}) => {
                             {
                                 potraitThree.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__potrait" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
                                     </div>
                                 ))
                             }
@@ -98,7 +98,7 @@ const Gallery = ({gallery}) => {
                             {
                                 landscapeThree.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__landscape" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
                                     </div>
                                 ))
                             }
@@ -106,7 +106,7 @@ const Gallery = ({gallery}) => {
                     </div>
 
                     <div className="founder__cta">
-                        <Link to="/" className="founder__button">View More</Link>
+                        <Link to="/" className="founder__button gallery__animate">View More</Link>
                     </div>
                 </div>
             </div>

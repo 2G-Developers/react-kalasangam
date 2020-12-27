@@ -1,36 +1,12 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import {Link} from 'gatsby'
 import FounderImage from '../images/founder.jpg'
-import {gsap} from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
 
 
-const Founder = () => {
-
-    useEffect(() => {
-        gsap.from('.founder__animate', {
-            scrollTrigger: '.founder__animate',
-            duration: 1,
-            opacity: 0,
-            y: -150,
-            stagger: 0.3,
-            delay: 0.5
-        })
-
-        gsap.from('.founder__animate-img', {
-            scrollTrigger: '.founder__animate',
-            duration: 1,
-            opacity: 0,
-            y: -150,
-            stagger: 0.1,
-            delay: 0.2
-        })
-    }, [])
+const Founder = ({dark}) => {
 
     return (
-        <section className="founder">
+        <section className={dark ? 'founder founder--dark': 'founder'}>
             <div className="container">
                 <div className="row">
                     <div className="founder__wrapper">

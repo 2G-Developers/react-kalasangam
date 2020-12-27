@@ -1,32 +1,12 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import TeamImage from '../images/7-edit.jpg'
 import {Link} from 'gatsby'
-import {gsap} from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
-
-const About = () => {
-    // const Animate = React.createRef()
-    useEffect(() => {
-        gsap.from('.about__animate', {
-            scrollTrigger: '.about__animate',
-            duration: 0.5,
-            opacity: 1,
-            x: -150,
-            stagger: 0.12
-        })
-
-        gsap.from('.about__animate-img', {
-            scrollTrigger: '.about__animate',
-            duration: 1.2,
-            opacity: 0,
-            x: -200
-        })
-    }, [])
+const About = ({dark}) => {
+    
 
     return (
-        <section className="about">
+        <section className={dark ? 'about about--dark': 'about'}>
             <div className="container">
                 <div className="row">
                     <div className="about__wrapper">

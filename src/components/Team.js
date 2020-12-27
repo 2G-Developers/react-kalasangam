@@ -3,7 +3,7 @@ import {FaFacebookF} from 'react-icons/fa'
 import {GrInstagram} from 'react-icons/gr'
 import Slider from "react-slick";
 
-const Team = ({teams}) => {
+const Team = ({teams, dark}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -39,13 +39,13 @@ const Team = ({teams}) => {
     };
 
     return (
-        <section className="team">
+        <section className={dark ? 'team team--dark': 'team'}>
             <div className="container">
                 <div className="gallery__heading-wrapper">
-                    <div className="gallery__heading">
+                    <div className="gallery__heading team__animate">
                         <h1>Team</h1>
                     </div>
-                    <div className="gallery__sub-heading">
+                    <div className="gallery__sub-heading team__animate">
                         <h3>Meet our awesome team</h3>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const Team = ({teams}) => {
                     <Slider {...settings}>
                         {
                             teams.map((team, index) => (
-                                <div className="team__card" key={index}>
+                                <div className="team__card team__animate-card" key={index}>
                                     <div className="team__profile">
                                         <img className="team__image" src={team.image} alt={team.name} />
 

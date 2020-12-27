@@ -2,6 +2,40 @@
     position: relative;
     padding: 5.625rem 0;
 
+    &--dark {
+        background: #242329;
+
+        .contact__heading {
+            color: #fff !important;
+        }
+
+        .contact__paragraph {
+            color: #97969d;
+        }
+
+        .gallery__sub-heading {
+            h3 {
+                color: #fff !important;
+            }
+        }
+
+        .gallery__heading {
+            color: #fff !important;
+        }
+
+        .gallery__paragraph {
+            color: #97969d;
+        }
+
+        .contact__secondary-heading {
+            color: #fff !important;
+        }
+
+        .contact__link {
+            color: #fff !important;
+        }
+    }
+
     &__wrapper {
         padding-left: 15px;
         padding-right: 15px;
@@ -111,7 +145,7 @@
     }
 
     &__send {
-        background: #25DAC5;
+        background: #D91D52;
         color: #fff;
         border-radius: 100px;
         outline: none;

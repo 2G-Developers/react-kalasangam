@@ -2,6 +2,23 @@
     position: relative;
     padding-top: 5.625rem;
 
+    &--dark {
+        background: #18171B;
+
+        .about__heading {
+            color: #fff !important;
+        }
+
+        .about__paragraph {
+            color: #97969d;
+        }
+    }
+
+    // height qoovh test
+    // min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+
     @media screen and (min-width: 768px) {
         padding: 5.625rem 0;
     }
@@ -92,7 +109,7 @@
 
     &__button {
         color: #fff;
-        background-color: #25DAC4;
+        background-color: #D91D52;
         padding: .5rem 1.5rem;
         border-radius: 20px;
         text-decoration: none;

@@ -1,5 +1,31 @@
 .team {
     position: relative;
+
+    &--dark {
+        background: #18171B;
+
+        .team__heading {
+            color: #fff !important;
+        }
+
+        .team__paragraph {
+            color: #97969d;
+        }
+
+        .gallery__sub-heading {
+            h3 {
+                color: #fff !important;
+            }
+        }
+
+        .gallery__heading {
+            color: #fff !important;
+        }
+
+        .gallery__paragraph {
+            color: #97969d;
+        }
+    }
     
     @media screen and (min-width: 768px) {
         padding: 5.625rem 0;
