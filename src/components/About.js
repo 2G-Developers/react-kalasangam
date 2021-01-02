@@ -1,11 +1,8 @@
 import React from 'react'
-import TeamImage from '../images/7-edit.jpg'
 import {Link} from 'gatsby'
-// import { FaFacebookF } from 'react-icons/fa'
-// import { GrInstagram } from 'react-icons/gr'
 import Fade from 'react-reveal/Fade';
 
-const About = ({dark}) => {
+const About = ({dark, data}) => {
     
 
     return (
@@ -16,12 +13,12 @@ const About = ({dark}) => {
                         <div className="about__content">
                             <Fade top duration={1000} delay={600}>
                                 <div className="about__heading desktop about__animate">
-                                    <h1>About StudioKalasangam</h1>
+                                    <h1>{data.heading}</h1>
                                 </div>
                             </Fade>
                             <Fade left duration={1000} delay={600}>
                                 <p className="about__paragraph about__animate">
-                                StudioKalaSangam is a group of vivacious individuals from Germany bonded closely together by their common love for dancing. The group spearheaded by Anushree Gour started making its presence felt in 2017. Since its inception, the team has now grown into a group consisting of enthusiastic talented dancers and choreographers. The team has been encouraged and provided with many amazing opportunities from the onset. 
+                                    {data.shortDescription}
                                 </p>
                                 
                                 <div className="about__cta about__animate">
@@ -32,11 +29,11 @@ const About = ({dark}) => {
                     </div>
                     <div className="about__wrapper about__order">
                         <div className="about__heading mobile about__animate">
-                            <h1>About KalasangamAG</h1>
+                            <h1>{data.heading}</h1>
                         </div>
                         <Fade right duration={1500} delay={1000}>
                             <div className="about__figure">
-                                <img src={TeamImage} alt="Team" className="about__image about__animate-img" />
+                                <img src={data.image} alt={data.alt} className="about__image about__animate-img" />
 
                                 {/* <div className="about__overlay">
                                     <div className="about__icon">

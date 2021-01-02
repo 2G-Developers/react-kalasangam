@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player/youtube'
 import Slider from "react-slick";
 import Fade from 'react-reveal/Fade';
 
-const Videos = () => {
+const Videos = ({data}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -19,31 +19,26 @@ const Videos = () => {
             <div className="container">
                 <div className="gallery__heading-wrapper">
                         <div className="gallery__heading gallery__animate">
-                            <h1>Videos</h1>
+                            <h1>{data.heading}</h1>
                         </div>
                         <div className="gallery__sub-heading gallery__animate">
-                            <h3>What better way to introduce ourselves than to let our work do the talking.</h3>
+                            <h3>{data.subHeading}</h3>
                         </div>
                     </div>
                 <div className="row" style={{justifyContent: "center"}}>
                     <Slider {...settings}>
-                        <Fade left duration={1000} delay={800}>
-                            <div className="videos-showcase__card">
-                                <ReactPlayer url="https://www.youtube.com/watch?v=RUJkzAm1XTg" className="videos-showcase__youtube" controls={true} width="100%" />
-                            </div>
-                        </Fade>
-
-                        <Fade left duration={1000} delay={800}>
-                            <div className="videos-showcase__card">
-                                <ReactPlayer url="https://www.youtube.com/watch?v=ZV57c096K7o" className="videos-showcase__youtube" controls={true} width="100%" />
-                            </div>
-                        </Fade>
-
-                        <Fade left duration={1000} delay={800}>
-                            <div className="videos-showcase__card">
-                                <ReactPlayer url="https://www.youtube.com/watch?v=jsyj-bwGlDg" className="videos-showcase__youtube" controls={true} width="100%" />
-                            </div>
-                        </Fade>
+                        {
+                            data.url.map((item, index) => (
+                                <React.Fragment key={index}>
+                                    <Fade left duration={1000} delay={800}>
+                                        <div className="videos-showcase__card">
+                                            <ReactPlayer onError={(err) => console.log(err)} url={item} className="videos-showcase__youtube" controls={true} width="100%" />
+                                        </div>
+                                    </Fade>
+                                </React.Fragment>
+                            ))
+                        }
+                        
                     </Slider>
                 </div>
                     <div className="founder__cta" style={{paddingTop: "2.5rem"}}>

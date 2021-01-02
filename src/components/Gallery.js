@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import {Link} from 'gatsby'
 import Fade from 'react-reveal/Fade';
 
-const Gallery = ({gallery, dark}) => {
+const Gallery = ({data, dark}) => {
     const settings = {
         dots: false,
         infinite: true,
@@ -17,8 +17,8 @@ const Gallery = ({gallery, dark}) => {
     const settings2 = {...settings, speed: 1300}
     const settings3 = {...settings, speed: 1700}
 
-    const potraitSlide = gallery.filter(slide => slide.type === 'potrait')
-    const landscapeSlide = gallery.filter(slide => slide.type === 'landscape')
+    const potraitSlide = data.gallery.filter(slide => slide.type === 'potrait')
+    const landscapeSlide = data.gallery.filter(slide => slide.type === 'landscape')
 
     const potraitOne = potraitSlide.slice(0,3)
     const potraitTwo = potraitSlide.slice(3,5)
@@ -34,11 +34,11 @@ const Gallery = ({gallery, dark}) => {
                     <div className="gallery__heading-wrapper">
                         <Fade top duration={1000} delay={600}>
                             <div className="gallery__heading gallery__animate">
-                                <h1>Gallery</h1>
+                                <h1>{data.heading}</h1>
                             </div>
                             <div className="gallery__sub-heading gallery__animate">
-                                <h3>They say a picture speaks a thousand words.</h3>
-                                <h3>Take a scroll through our memory lane.</h3>
+                                <h3>{data.secondaryHeading}</h3>
+                                <h3>{data.ternaryHeading}</h3>
                             </div>
                         </Fade>
                     </div>

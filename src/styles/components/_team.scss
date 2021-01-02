@@ -45,6 +45,10 @@
         padding-right: 15px;
         width: 100%;
 
+        &:focus {
+            outline: none;
+        }
+
     }
 
     &__profile {

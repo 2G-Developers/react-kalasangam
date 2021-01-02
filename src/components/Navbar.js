@@ -1,40 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from 'gatsby'
-import { menuData } from '../data/MenuData'
+import Logo from '../images/logo.png'
+// import { menuData } from '../data/MenuData'
 // import {FaBars} from 'react-icons/fa'
-import {RiCloseLine} from 'react-icons/ri'
+// import {RiCloseLine} from 'react-icons/ri'
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false)
+
     return (
         <nav className="nav">
-            {/* <Link to="/" className="nav__logo">Kalasangam</Link>
-            <FaBars className="nav__hamburger"></FaBars>
-            <div className="nav__navmenu">
-                {menuData.map((item, index) => (
-                    <Link className="nav__links" to={item.link} key={index}>
-                        {item.title}
-                    </Link>
-                ))}
-            </div> */}
-            {/* <div className="nav__button-wrapper">
-                <Link to="/contact" className="nav__button">Contact Us</Link>
-            </div> */}
+            <div className="nav__logo">
+                <img src={Logo} width="140px" height="auto" alt="StudioKalasangam"/>
+            </div>
 
-            {/* <div className="nav__overlay"> */}
-                <a href="/index" className="nav__exit" aria-label="close"><RiCloseLine /></a>
+            <ul className={navbar ? "nav__list nav__list--active": "nav__list"}>
+                <li className="nav__item"><Link to="/" className="nav__link">Home</Link></li>
+                <li className="nav__item"><Link to="/about" className="nav__link">About</Link></li>
+                <li className="nav__item"><Link to="/founder" className="nav__link">Founder</Link></li>
+                <li className="nav__item"><Link to="/gallery" className="nav__link">Gallery</Link></li>
+            </ul>
 
-                <div className="nav__menu">
-                    <ul>
-                        {menuData.map((item, index) => (
-                            <li>
-                                <Link className="nav__links" to={item.link} key={index}>
-                                    {item.title}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            {/* </div> */}
+            <button className="nav__hamburger" onClick={() => setNavbar(prevState => !prevState)}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     )
 }

@@ -4,7 +4,7 @@ import {GrInstagram} from 'react-icons/gr'
 import Slider from "react-slick";
 import Fade from 'react-reveal/Fade';
 
-const Team = ({teams, dark}) => {
+const Team = ({data, dark}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -45,17 +45,17 @@ const Team = ({teams, dark}) => {
                 <div className="gallery__heading-wrapper">
                     <Fade top duration={1000} delay={600}>
                         <div className="gallery__heading team__animate">
-                            <h1>Faculty</h1>
+                            <h1>{data.heading}</h1>
                         </div>
                         <div className="gallery__sub-heading team__animate">
-                            <h3>Meet our talented faculty</h3>
+                            <h3>{data.subHeading}</h3>
                         </div>
                     </Fade>
                 </div>
                 <div className="row team__row">
                     <Slider {...settings}>
                         {
-                            teams.map((team, index) => (
+                            data.teams.map((team, index) => (
                                 <div className="team__card team__animate-card" key={index}>
                                     <div className="team__profile">
                                         <Fade left duration={1000} delay={1000}>

@@ -26,141 +26,145 @@ import GalleryTwentyFive from '../images/25.jpg'
 import GalleryTwentySix from '../images/28.jpg'
 import GalleryTwentySeven from '../images/29.jpg'
 
-
-export const GalleryData = [
-    {
-        image: GalleryOne,
-        alt: 'Kalasangam 1',
-        type: 'potrait'
-    },
-    {
-        image: GalleryTwo,
-        alt: 'Kalasangam 2',
-        type: 'landscape'
-    },
-    {
-        image: GalleryThree,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryFour,
-        alt: 'Kalasangam 1',
-        type: 'potrait'
-    },
-    {
-        image: GalleryFive,
-        alt: 'Kalasangam 2',
-        type: 'landscape'
-    },
-    {
-        image: GallerySix,
-        alt: 'Kalasangam 3',
-        type: 'potrait'
-    },
-    {
-        image: GallerySeven,
-        alt: 'Kalasangam 1',
-        type: 'landscape'
-    },
-    {
-        image: GalleryEight,
-        alt: 'Kalasangam 2',
-        type: 'landscape'
-    },
-    {
-        image: GalleryNine,
-        alt: 'Kalasangam 3',
-        type: 'potrait'
-    },
-    {
-        image: GalleryTen,
-        alt: 'Kalasangam 1',
-        type: 'landscape'
-    },
-    {
-        image: GalleryEleven,
-        alt: 'Kalasangam 2',
-        type: 'potrait'
-    },
-    {
-        image: GalleryTweleve,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryThirteen,
-        alt: 'Kalasangam 1',
-        type: 'landscape'
-    },
-    {
-        image: GalleryFourteen,
-        alt: 'Kalasangam 2',
-        type: 'landscape'
-    },
-    {
-        image: GalleryFifteen,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GallerySixteen,
-        alt: 'Kalasangam 1',
-        type: 'landscape'
-    },
-    {
-        image: GallerySeventeen,
-        alt: 'Kalasangam 2',
-        type: 'landscape'
-    },
-    {
-        image: GalleryEighteen,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryNineteen,
-        alt: 'Kalasangam 1',
-        type: 'landscape'
-    },
-    {
-        image: GalleryTwenty,
-        alt: 'Kalasangam 2',
-        type: 'potrait'
-    },
-    {
-        image: GalleryTwentyOne,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryTwentyTwo,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryTwentyThree,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryTwentyFour,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryTwentyFive,
-        alt: 'Kalasangam 3',
-        type: 'potrait'
-    },
-    {
-        image: GalleryTwentySix,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    },
-    {
-        image: GalleryTwentySeven,
-        alt: 'Kalasangam 3',
-        type: 'landscape'
-    }
-]
+export const GalleryData = {
+    heading: "Gallery",
+    secondaryHeading: "They say a picture speaks a thousand words.",
+    ternaryHeading: "Take a scroll through our memory lane.",
+    gallery: [
+        {
+            image: GalleryOne,
+            alt: 'Kalasangam 1',
+            type: 'potrait'
+        },
+        {
+            image: GalleryTwo,
+            alt: 'Kalasangam 2',
+            type: 'landscape'
+        },
+        {
+            image: GalleryThree,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryFour,
+            alt: 'Kalasangam 1',
+            type: 'potrait'
+        },
+        {
+            image: GalleryFive,
+            alt: 'Kalasangam 2',
+            type: 'landscape'
+        },
+        {
+            image: GallerySix,
+            alt: 'Kalasangam 3',
+            type: 'potrait'
+        },
+        {
+            image: GallerySeven,
+            alt: 'Kalasangam 1',
+            type: 'landscape'
+        },
+        {
+            image: GalleryEight,
+            alt: 'Kalasangam 2',
+            type: 'landscape'
+        },
+        {
+            image: GalleryNine,
+            alt: 'Kalasangam 3',
+            type: 'potrait'
+        },
+        {
+            image: GalleryTen,
+            alt: 'Kalasangam 1',
+            type: 'landscape'
+        },
+        {
+            image: GalleryEleven,
+            alt: 'Kalasangam 2',
+            type: 'potrait'
+        },
+        {
+            image: GalleryTweleve,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryThirteen,
+            alt: 'Kalasangam 1',
+            type: 'landscape'
+        },
+        {
+            image: GalleryFourteen,
+            alt: 'Kalasangam 2',
+            type: 'landscape'
+        },
+        {
+            image: GalleryFifteen,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GallerySixteen,
+            alt: 'Kalasangam 1',
+            type: 'landscape'
+        },
+        {
+            image: GallerySeventeen,
+            alt: 'Kalasangam 2',
+            type: 'landscape'
+        },
+        {
+            image: GalleryEighteen,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryNineteen,
+            alt: 'Kalasangam 1',
+            type: 'landscape'
+        },
+        {
+            image: GalleryTwenty,
+            alt: 'Kalasangam 2',
+            type: 'potrait'
+        },
+        {
+            image: GalleryTwentyOne,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryTwentyTwo,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryTwentyThree,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryTwentyFour,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryTwentyFive,
+            alt: 'Kalasangam 3',
+            type: 'potrait'
+        },
+        {
+            image: GalleryTwentySix,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        },
+        {
+            image: GalleryTwentySeven,
+            alt: 'Kalasangam 3',
+            type: 'landscape'
+        }
+    ]
+}

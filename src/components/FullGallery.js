@@ -1,8 +1,9 @@
 import React from 'react'
-import {GalleryData} from '../data/GalleryData'
-import TeamImage from '../images/2.jpg'
 
-const FullGallery = () => {
+import TeamImage from '../images/2.jpg'
+import Fade from 'react-reveal/Fade';
+
+const FullGallery = ({data}) => {
     return (
         <section className="fullgallery">
             <div className="page__img-wrapper">
@@ -12,8 +13,10 @@ const FullGallery = () => {
                 <div className="row">
                     <div className="fullgallery__wrapper">
                         {
-                            GalleryData.map((gallery, index) => (
-                                <img className="fullgallery__image" src={gallery.image} alt={gallery.alt} key={index} />
+                            data.gallery.map((gallery, index) => (
+                                <Fade bottom duration={1200} delay={600} key={index}>
+                                    <img className="fullgallery__image" src={gallery.image} alt={gallery.alt} />
+                                </Fade>
                             ))
                         }
                     </div>
