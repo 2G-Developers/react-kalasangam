@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 import Slider from "react-slick";
+import Fade from 'react-reveal/Fade';
 
 const Videos = () => {
     const settings = {
@@ -26,17 +27,23 @@ const Videos = () => {
                     </div>
                 <div className="row" style={{justifyContent: "center"}}>
                     <Slider {...settings}>
-                        <div className="videos-showcase__card">
-                            <ReactPlayer url="https://www.youtube.com/watch?v=RUJkzAm1XTg" className="videos-showcase__youtube" controls={true} width="100%" />
-                        </div>
+                        <Fade left duration={1000} delay={800}>
+                            <div className="videos-showcase__card">
+                                <ReactPlayer url="https://www.youtube.com/watch?v=RUJkzAm1XTg" className="videos-showcase__youtube" controls={true} width="100%" />
+                            </div>
+                        </Fade>
 
-                        <div className="videos-showcase__card">
-                            <ReactPlayer url="https://www.youtube.com/watch?v=ZV57c096K7o" className="videos-showcase__youtube" controls={true} width="100%" />
-                        </div>
+                        <Fade left duration={1000} delay={800}>
+                            <div className="videos-showcase__card">
+                                <ReactPlayer url="https://www.youtube.com/watch?v=ZV57c096K7o" className="videos-showcase__youtube" controls={true} width="100%" />
+                            </div>
+                        </Fade>
 
-                        <div className="videos-showcase__card">
-                            <ReactPlayer url="https://www.youtube.com/watch?v=jsyj-bwGlDg" className="videos-showcase__youtube" controls={true} width="100%" />
-                        </div>
+                        <Fade left duration={1000} delay={800}>
+                            <div className="videos-showcase__card">
+                                <ReactPlayer url="https://www.youtube.com/watch?v=jsyj-bwGlDg" className="videos-showcase__youtube" controls={true} width="100%" />
+                            </div>
+                        </Fade>
                     </Slider>
                 </div>
                     <div className="founder__cta" style={{paddingTop: "2.5rem"}}>

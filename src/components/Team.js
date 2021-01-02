@@ -2,6 +2,7 @@ import React from 'react'
 import {FaFacebookF} from 'react-icons/fa'
 import {GrInstagram} from 'react-icons/gr'
 import Slider from "react-slick";
+import Fade from 'react-reveal/Fade';
 
 const Team = ({teams, dark}) => {
     const settings = {
@@ -42,12 +43,14 @@ const Team = ({teams, dark}) => {
         <section className={dark ? 'team team--dark': 'team'}>
             <div className="container">
                 <div className="gallery__heading-wrapper">
-                    <div className="gallery__heading team__animate">
-                        <h1>Faculty</h1>
-                    </div>
-                    <div className="gallery__sub-heading team__animate">
-                        <h3>Meet our talented faculty</h3>
-                    </div>
+                    <Fade top duration={1000} delay={600}>
+                        <div className="gallery__heading team__animate">
+                            <h1>Faculty</h1>
+                        </div>
+                        <div className="gallery__sub-heading team__animate">
+                            <h3>Meet our talented faculty</h3>
+                        </div>
+                    </Fade>
                 </div>
                 <div className="row team__row">
                     <Slider {...settings}>
@@ -55,8 +58,9 @@ const Team = ({teams, dark}) => {
                             teams.map((team, index) => (
                                 <div className="team__card team__animate-card" key={index}>
                                     <div className="team__profile">
-                                        <img className="team__image" src={team.image} alt={team.name} />
-
+                                        <Fade left duration={1000} delay={1000}>
+                                            <img className="team__image" src={team.image} alt={team.name} />
+                                        </Fade>
                                         <div className="team__overlay">
                                             <div className="team__icon">
                                                 <a href={team.facebook} className="team__link" aria-label="social media"><FaFacebookF /></a>

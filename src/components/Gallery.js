@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import {Link} from 'gatsby'
+import Fade from 'react-reveal/Fade';
 
 const Gallery = ({gallery, dark}) => {
     const settings = {
@@ -31,13 +32,15 @@ const Gallery = ({gallery, dark}) => {
         <section className={dark ? 'gallery gallery--dark': 'gallery'}>
             <div className="container">
                     <div className="gallery__heading-wrapper">
-                        <div className="gallery__heading gallery__animate">
-                            <h1>Gallery</h1>
-                        </div>
-                        <div className="gallery__sub-heading gallery__animate">
-                            <h3>They say a picture speaks a thousand words.</h3>
-                            <h3>Take a scroll through our memory lane.</h3>
-                        </div>
+                        <Fade top duration={1000} delay={600}>
+                            <div className="gallery__heading gallery__animate">
+                                <h1>Gallery</h1>
+                            </div>
+                            <div className="gallery__sub-heading gallery__animate">
+                                <h3>They say a picture speaks a thousand words.</h3>
+                                <h3>Take a scroll through our memory lane.</h3>
+                            </div>
+                        </Fade>
                     </div>
                 <div className="row gallery__row">
                     <div className="gallery__wrapper">
@@ -45,7 +48,9 @@ const Gallery = ({gallery, dark}) => {
                             {
                                 potraitOne.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        <Fade left duration={1000} delay={800}>
+                                            <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        </Fade>
                                     </div>
                                 ))
                             }
@@ -55,7 +60,9 @@ const Gallery = ({gallery, dark}) => {
                             {
                                 landscapeOne.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        <Fade left duration={1000} delay={800}>
+                                            <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        </Fade>
                                     </div>
                                 ))
                             }
@@ -67,7 +74,9 @@ const Gallery = ({gallery, dark}) => {
                             {
                                 landscapeTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        <Fade left duration={1000} delay={800}>
+                                            <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        </Fade>
                                     </div>
                                 ))
                             }
@@ -77,7 +86,9 @@ const Gallery = ({gallery, dark}) => {
                             {
                                 potraitTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        <Fade left duration={1000} delay={800}>
+                                            <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        </Fade>
                                     </div>
                                 ))
                             }
@@ -88,7 +99,9 @@ const Gallery = ({gallery, dark}) => {
                             {
                                 potraitThree.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        <Fade left duration={1000} delay={800}>
+                                            <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
+                                        </Fade>
                                     </div>
                                 ))
                             }
@@ -98,7 +111,9 @@ const Gallery = ({gallery, dark}) => {
                             {
                                 landscapeThree.map((slide, index) => (
                                     <div key={index}>
-                                        <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        <Fade left duration={1000} delay={800}>
+                                            <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
+                                        </Fade>
                                     </div>
                                 ))
                             }
