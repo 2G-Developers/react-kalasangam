@@ -1,4 +1,4 @@
-import FounderImage from '../images/founder.jpg'
+// import FounderImage from '../images/founder.jpg'
 
 export const FounderPageData = {
     heading: 'Anushree Gour',
@@ -14,6 +14,6 @@ export const FounderPageData = {
         "From your sadness to your happiness, you can express all of these in your dance - Anushree Gour",
         "DEDICATE a DAY to DANCE!"
     ],
-    image: FounderImage,
+    image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/founder_n5tgni.webp',
     alt: 'Anushree'
 }

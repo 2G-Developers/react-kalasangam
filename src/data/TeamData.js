@@ -1,7 +1,7 @@
-import UserOne from '../images/user1.jpg'
-import UserTwo from '../images/user2.jpg'
-import UserThree from '../images/user3.jpg'
-import UserFour from '../images/user4.jpg'
+// import UserOne from '../images/user1.jpg'
+// import UserTwo from '../images/user2.jpg'
+// import UserThree from '../images/user3.jpg'
+// import UserFour from '../images/user4.jpg'
 
 export const TeamData = {
     heading: "Faculty",
@@ -9,28 +9,28 @@ export const TeamData = {
     teams: [
         {
             name: 'Arpitha Ravi',
-            image: UserOne,
+            image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user1_x8a7wg.webp',
             position: 'Faculty',
             facebook: '',
             instagram: ''
         },
         {
             name: 'Ishita Tomer',
-            image: UserTwo,
+            image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user2_ayqbux.webp',
             position: 'Faculty',
             facebook: '',
             instagram: ''
         },
         {
             name: 'Vineetha Rajendran',
-            image: UserThree,
+            image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user3_u3atqd.webp',
             position: 'Faculty',
             facebook: '',
             instagram: ''
         },
         {
             name: 'Sangeetha Shivaprasad',
-            image: UserFour,
+            image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user4_tigacg.webp',
             position: 'Faculty',
             facebook: '',
             instagram: ''
