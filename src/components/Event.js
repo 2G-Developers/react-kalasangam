@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Dancers from '../images/dancers.jpeg'
+// import Dancers from '../images/dancers.jpeg'
 
 import Modal from './Modal'
 import {AiOutlineClose} from 'react-icons/ai'
@@ -15,7 +15,7 @@ const Event = ({data}) => {
     }
 
     return (
-        <section className="event" style={{backgroundImage: `url(${Dancers})`}}>
+        <section className="event" style={{backgroundImage: `url(https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/dancers_dzud3h.webp)`}}>
                 <div className="gallery__heading-wrapper">
                     <Fade top duration={1000} delay={600}>
                         <div className="gallery__heading gallery__heading--secondary event__animate">
