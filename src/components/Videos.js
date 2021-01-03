@@ -32,7 +32,7 @@ const Videos = ({data}) => {
                                 <React.Fragment key={index}>
                                     <Fade left duration={1000} delay={800}>
                                         <div className="videos-showcase__card">
-                                            <ReactPlayer light={true} onError={(err) => console.log(err)} url={item} className="videos-showcase__youtube" controls={true} width="100%" />
+                                            <ReactPlayer light={true} playing={true} onError={(err) => console.log(err)} url={item} className="videos-showcase__youtube" controls={true} width="100%" />
                                         </div>
                                     </Fade>
                                 </React.Fragment>
