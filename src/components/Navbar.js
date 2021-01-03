@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'gatsby'
-import Logo from '../images/logo.png'
+// import Logo from '../images/logo.png'
 // import { menuData } from '../data/MenuData'
 // import {FaBars} from 'react-icons/fa'
 // import {RiCloseLine} from 'react-icons/ri'
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav className="nav">
             <div className="nav__logo">
-                <img src={Logo} width="140px" height="auto" alt="StudioKalasangam"/>
+                <img src="https://res.cloudinary.com/gopal1996/image/upload/v1609700283/studioKalasangam/logo_gz5izv.webp" width="140px" height="auto" alt="StudioKalasangam"/>
             </div>
 
             <ul className={navbar ? "nav__list nav__list--active": "nav__list"}>
