@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/lazy'
 import Slider from "react-slick";
 import Fade from 'react-reveal/Fade';
 
