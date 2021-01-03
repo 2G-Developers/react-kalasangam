@@ -41,7 +41,7 @@ const Contact = ({dark}) => {
                                     </div>
 
                                     <div className="contact__map">
-                                        <iframe width="100%" height="100%" title="map" src="https://maps.google.com/maps?q=Birkenweg%2037%2C%20Bruck%2C%20Erlangen%2091058&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+                                        <iframe style={{pointerEvents: 'none'}} width="100%" height="100%" title="map" src="https://maps.google.com/maps?q=Birkenweg%2037%2C%20Bruck%2C%20Erlangen%2091058&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                                     </div>
                                 </div>
                             </div>
