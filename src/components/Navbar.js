@@ -1,33 +1,33 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React, {useState} from 'react'
 import {Link} from 'gatsby'
 import { menuData } from '../data/MenuData'
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
-    const [navbarBg, setNavbarBg] = useState(false)
+    // const [navbarBg, setNavbarBg] = useState(false)
     const [activeNav, setActiveNav] = useState(window.location.pathname)
 
-    const changeBackground = useRef(null)
+    // const changeBackground = useRef(null)
 
-    changeBackground.current = () => {
-        if(window.scrollY >= 100) {
-            setNavbarBg(true)
-        } else {
-            setNavbarBg(false)
-        }
-    }
+    // changeBackground.current = () => {
+    //     if(window.scrollY >= 100) {
+    //         setNavbarBg(true)
+    //     } else {
+    //         setNavbarBg(false)
+    //     }
+    // }
 
-    useEffect(() => {
-        window.addEventListener('scroll', changeBackground.current)
+    // useEffect(() => {
+    //     window.addEventListener('scroll', changeBackground.current)
 
-        return () => {
-            window.removeEventListener('scroll', changeBackground.current)
-        }
-    }, [changeBackground])
+    //     return () => {
+    //         window.removeEventListener('scroll', changeBackground.current)
+    //     }
+    // }, [changeBackground])
 
 
     return (
-        <nav className="nav" style={{background: `${navbarBg ? '#fff': ''}`}}>
+        <nav className="nav">
             <div className="nav__logo">
                 <img src="https://res.cloudinary.com/gopal1996/image/upload/v1609703905/studioKalasangam/logo-thumb_zbchbw.webp" width="140px" height="auto" alt="StudioKalasangam"/>
             </div>
