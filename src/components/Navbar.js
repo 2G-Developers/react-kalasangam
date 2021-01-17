@@ -33,7 +33,7 @@ const Navbar = () => {
                         <li key={index} className="nav-item"><Link to={data.link} className={activeNav === data.link ? 'nav__link nav__link--active': 'nav__link'} onClick={() => setActiveNav(data.link)}>{data.title}</Link></li>
                     ))
                 }
-                <img src="https://res.cloudinary.com/gopal1996/image/upload/v1610643082/studioKalasangam/svg-group-dance_fv5rk9.png" className="nav__image nav__image--right" alt="Svg Group Dance" />
+                <img src="https://res.cloudinary.com/gopal1996/image/upload/v1610643082/studioKalasangam/svg-group-dance_fv5rk9.png" className="nav__image nav__image--right floating" alt="Svg Group Dance" />
             </ul>
 
             <button className="nav__hamburger" onClick={() => setNavbar(prevState => !prevState)}>
