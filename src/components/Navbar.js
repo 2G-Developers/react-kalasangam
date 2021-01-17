@@ -4,18 +4,18 @@ import { menuData } from '../data/MenuData'
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
-    // const [navbarBg, setNavbarBg] = useState(false)
+    const [navbarBg, setNavbarBg] = useState(false)
     const [activeNav, setActiveNav] = useState('/')
 
     // const changeBackground = useRef(null)
 
-    // changeBackground.current = () => {
-    //     if(window.scrollY >= 100) {
-    //         setNavbarBg(true)
-    //     } else {
-    //         setNavbarBg(false)
-    //     }
-    // }
+    const changeBackground = () => {
+        if(window.scrollY >= 100) {
+            setNavbarBg(true)
+        } else {
+            setNavbarBg(false)
+        }
+    }
 
     // useEffect(() => {
     //     window.addEventListener('scroll', changeBackground.current)
@@ -26,11 +26,12 @@ const Navbar = () => {
     // }, [changeBackground])
     useEffect(() => {
         setActiveNav(window.location.pathname)
+        window.addEventListener('scroll', changeBackground)
     }, [])
 
 
     return (
-        <nav className="nav">
+        <nav className="nav" style={{background: `${navbarBg ? '#fff': ''}`}}>
             <div className="nav__logo">
                 <img src="https://res.cloudinary.com/gopal1996/image/upload/v1609703905/studioKalasangam/logo-thumb_zbchbw.webp" width="140px" height="auto" alt="StudioKalasangam"/>
             </div>
