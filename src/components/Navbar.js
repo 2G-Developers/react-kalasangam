@@ -1,16 +1,15 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import {Link} from 'gatsby'
-// import Logo from '../images/logo-thumb.webp'
 import { menuData } from '../data/MenuData'
-// import {FaBars} from 'react-icons/fa'
-// import {RiCloseLine} from 'react-icons/ri'
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
     const [navbarBg, setNavbarBg] = useState(false)
     const [activeNav, setActiveNav] = useState(window.location.pathname)
 
-    const changeBackground = () => {
+    const changeBackground = useRef(null)
+
+    changeBackground.current = () => {
         if(window.scrollY >= 100) {
             setNavbarBg(true)
         } else {
@@ -18,7 +17,14 @@ const Navbar = () => {
         }
     }
 
-    window.addEventListener('scroll', changeBackground)
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground.current)
+
+        return () => {
+            window.removeEventListener('scroll', changeBackground.current)
+        }
+    }, [changeBackground])
+
 
     return (
         <nav className="nav" style={{background: `${navbarBg ? '#fff': ''}`}}>
