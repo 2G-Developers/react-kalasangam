@@ -11,28 +11,28 @@ export const TeamData = {
             name: 'Arpitha Ravi',
             image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user1_x8a7wg.webp',
             position: 'Faculty',
-            facebook: '',
+            facebook: 'https://www.facebook.com/arpita.ravi?ref=br_rs',
             instagram: ''
         },
         {
             name: 'Ishita Tomer',
             image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user2_ayqbux.webp',
             position: 'Faculty',
-            facebook: '',
+            facebook: 'https://www.facebook.com/ishita.tomer',
             instagram: ''
         },
         {
             name: 'Vineetha Rajendran',
             image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user3_u3atqd.webp',
             position: 'Faculty',
-            facebook: '',
+            facebook: 'https://www.facebook.com/VineethaRajendran20/',
             instagram: ''
         },
         {
             name: 'Sangeetha Shivaprasad',
             image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user4_tigacg.webp',
             position: 'Faculty',
-            facebook: '',
+            facebook: 'https://www.facebook.com/sangeetha.prasad.39',
             instagram: ''
         },
     ]

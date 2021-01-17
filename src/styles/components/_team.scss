@@ -81,6 +81,9 @@
             color: #454545;
             font-size: 18px;
             text-transform: uppercase;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         p {

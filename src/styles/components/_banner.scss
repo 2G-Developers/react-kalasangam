@@ -75,7 +75,7 @@
         transition: .3s;
 
         &:hover {
-            background: #cd853f;
+            background: #fe1a93;
             transform: scale(1.05);
         }
     }
@@ -93,7 +93,7 @@
         transition: .3s;
 
         &:hover {
-            background: #cd853f;
+            background: #fe1a93;
             transform: scale(1.05);
         }
     }
@@ -125,14 +125,14 @@
 // Slick slide dot style
 .slick-dots li button:before {
     border-radius: 50%;
-    background-color: #D91D52;
-    color: #D91D52 !important;
+    background-color: #fe1a93;
+    color: #fe1a93 !important;
     width: 15px;
     height: 15px;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #D91D52 !important;
+    color: #fe1a93 !important;
     width: 20px !important;
     height: 20px !important;
 }

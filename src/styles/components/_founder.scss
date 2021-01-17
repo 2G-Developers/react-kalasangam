@@ -72,6 +72,8 @@
         line-height: 52px;
         text-align: left;
         color: #1E0E62;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 5px;
         margin-bottom: 2.5rem;
     }
 
@@ -96,14 +98,19 @@
     }
 
     &__cta {
-        margin: 2.5rem 0;
+        margin-bottom: 2.5rem;
     }
 
     &__button {
         color: #fff;
-        background-color: #D91D52;
+        background-color: #fe1a93;
         padding: .5rem 1.5rem;
         border-radius: 20px;
         text-decoration: none;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #000;
+        }
     }
 }

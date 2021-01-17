@@ -33,7 +33,7 @@ const About = ({dark, data}) => {
                         </div>
                         <Fade right duration={1500} delay={1000}>
                             <div className="about__figure">
-                                <img src={data.image} alt={data.alt} className="about__image about__animate-img" />
+                                <img src={data.image} alt={data.alt} className="about__image about__animate-img floating" />
 
                                 {/* <div className="about__overlay">
                                     <div className="about__icon">

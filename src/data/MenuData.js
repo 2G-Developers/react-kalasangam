@@ -1,5 +1,9 @@
 export const menuData = [
     {
+        title: 'Home',
+        link: '/'
+    },
+    {
         title: 'About',
         link: '/about'
     },
@@ -10,5 +14,9 @@ export const menuData = [
     {
         title: 'gallery',
         link: '/gallery'
+    },
+    {
+        title: 'Contact',
+        link: '/contact'
     },
 ]

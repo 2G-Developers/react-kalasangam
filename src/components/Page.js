@@ -6,7 +6,7 @@ const Page = ({data}) => {
     return (
         <section className="page">
             <div className="page__img-wrapper">
-                <img src={data.image} alt={data.alt} className="page__image" />
+                <img src={data.banner} alt={data.alt} className="page__image" />
             </div>
 
             <div className="container">
