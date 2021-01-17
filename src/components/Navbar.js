@@ -27,6 +27,10 @@ const Navbar = () => {
     useEffect(() => {
         setActiveNav(window.location.pathname)
         window.addEventListener('scroll', changeBackground)
+
+        return () => {
+            window.removeEventListener('scroll', changeBackground)
+        }
     }, [])
 
 
