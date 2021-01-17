@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'gatsby'
 import { menuData } from '../data/MenuData'
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
     // const [navbarBg, setNavbarBg] = useState(false)
-    const [activeNav, setActiveNav] = useState(window.location.pathname)
+    const [activeNav, setActiveNav] = useState('/')
 
     // const changeBackground = useRef(null)
 
@@ -24,6 +24,9 @@ const Navbar = () => {
     //         window.removeEventListener('scroll', changeBackground.current)
     //     }
     // }, [changeBackground])
+    useEffect(() => {
+        setActiveNav(window.location.pathname)
+    }, [])
 
 
     return (
