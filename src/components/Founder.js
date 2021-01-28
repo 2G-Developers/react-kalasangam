@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 
 const Founder = ({data, dark}) => {
@@ -10,42 +10,42 @@ const Founder = ({data, dark}) => {
             <div className="container">
                 <div className="row">
                     <div className="founder__wrapper">
-                        <Fade top duration={1000}>
+                        {/* <Fade top duration={1000}> */}
                             <div className="founder__heading mobile founder__animate">
                                 <h1>Anushree Gour</h1>
                             </div>
-                        </Fade>
-                        <Fade left duration={1000}>
-                            <div className="founder__figure founder__animate-img" style={{backgroundImage: `url(${data.image})`}}>
-                                {/* <img src={FounderImage} alt="Founder" className="founder__image" /> */}
+                        {/* </Fade> */}
+                        {/* <Fade left duration={1000}> */}
+                            <div className="founder__figure founder__animate-img">
+                                <img src={data.image} alt="Founder" className="founder__image" />
                             </div>
-                        </Fade>
+                        {/* </Fade> */}
                     </div>
 
                     <div className="founder__wrapper">
                         <div className="founder__content">
-                            <Fade top duration={1000}>
+                            {/* <Fade top duration={1000}> */}
                                 <div className="founder__heading desktop founder__animate">
                                     <h1>Anushree Gour</h1>
                                 </div>
-                            </Fade>
+                            {/* </Fade> */}
                             {
                                 data.shortDescription.map((description, index) => (
                                     <React.Fragment key={index}>
-                                        <Fade right duration={1200}>
+                                        {/* <Fade right duration={1200}> */}
                                             <p className="founder__paragraph founder__animate">
                                             {description}
                                             </p>
-                                        </Fade>
+                                        {/* </Fade> */}
                                     </React.Fragment>
                                 ))
                             }
                             
-                            <Fade right duration={1200}>
+                            {/* <Fade right duration={1200}> */}
                                 <div className="founder__cta founder__animate">
                                     <Link to="/founder" className="founder__button">Read More</Link>
                                 </div>
-                            </Fade>
+                            {/* </Fade> */}
                         </div>
                     </div>
                     

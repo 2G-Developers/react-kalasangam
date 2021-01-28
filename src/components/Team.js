@@ -2,7 +2,7 @@ import React from 'react'
 import {FaFacebookF} from 'react-icons/fa'
 import {GrInstagram} from 'react-icons/gr'
 import Slider from "react-slick";
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 const Team = ({data, dark}) => {
     const settings = {
@@ -43,14 +43,14 @@ const Team = ({data, dark}) => {
         <section className={dark ? 'team team--dark': 'team'}>
             <div className="container">
                 <div className="gallery__heading-wrapper">
-                    <Fade top duration={1000}>
+                    {/* <Fade top duration={1000}> */}
                         <div className="gallery__heading team__animate">
                             <h1>{data.heading}</h1>
                         </div>
                         <div className="gallery__sub-heading team__animate">
                             <h3>{data.subHeading}</h3>
                         </div>
-                    </Fade>
+                    {/* </Fade> */}
                 </div>
                 <div className="row team__row">
                     <Slider {...settings}>

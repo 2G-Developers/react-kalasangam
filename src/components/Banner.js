@@ -55,7 +55,7 @@ const Banner = ({slides}) => {
                         <div className="dancing__letter dancing__letter--first"><span className="dancing__hand--left"></span>N<span className="dancing__hand--right"></span></div>
                         <div className="dancing__letter dancing__letter--second"><span className="dancing__hand--left"></span>G<span className="dancing__hand--right"></span></div>
                         <div className="dancing__letter dancing__letter--third"><span className="dancing__hand--left"></span>A<span className="dancing__hand--right"></span></div>
-                        <div className="dancing__letter dancing__letter--fourth"><span className="dancing__hand--left"></span>M</div>
+                        <div className="dancing__letter dancing__letter--fourth"><span className="dancing__hand--left"></span>M<span className="dancing__hand--right"></span></div>
                         <br/>
                         <Link to="/contact" className="banner__button">Get in touch</Link>
                     </div>

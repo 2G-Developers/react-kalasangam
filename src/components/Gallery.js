@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import {Link} from 'gatsby'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 const Gallery = ({data, dark}) => {
     const settings = {
@@ -32,7 +32,7 @@ const Gallery = ({data, dark}) => {
         <section className={dark ? 'gallery gallery--dark': 'gallery'}>
             <div className="container">
                     <div className="gallery__heading-wrapper">
-                        <Fade top duration={1000}>
+                        {/* <Fade top duration={1000}> */}
                             <div className="gallery__heading gallery__animate">
                                 <h1>{data.heading}</h1>
                             </div>
@@ -40,7 +40,7 @@ const Gallery = ({data, dark}) => {
                                 <h3>{data.secondaryHeading}</h3>
                                 <h3>{data.ternaryHeading}</h3>
                             </div>
-                        </Fade>
+                        {/* </Fade> */}
                     </div>
                 <div className="row gallery__row">
                     <div className="gallery__wrapper">
@@ -48,9 +48,9 @@ const Gallery = ({data, dark}) => {
                             {
                                 potraitOne.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000}>
+                                        {/* <Fade left duration={1000}> */}
                                             <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
-                                        </Fade>
+                                        {/* </Fade> */}
                                     </div>
                                 ))
                             }
@@ -60,9 +60,9 @@ const Gallery = ({data, dark}) => {
                             {
                                 landscapeOne.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000}>
+                                        {/* <Fade left duration={1000}> */}
                                             <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
-                                        </Fade>
+                                        {/* </Fade> */}
                                     </div>
                                 ))
                             }
@@ -74,9 +74,9 @@ const Gallery = ({data, dark}) => {
                             {
                                 landscapeTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000}>
+                                        {/* <Fade left duration={1000}> */}
                                             <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
-                                        </Fade>
+                                        {/* </Fade> */}
                                     </div>
                                 ))
                             }
@@ -86,9 +86,9 @@ const Gallery = ({data, dark}) => {
                             {
                                 potraitTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000}>
+                                        {/* <Fade left duration={1000}> */}
                                             <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
-                                        </Fade>
+                                        {/* </Fade> */}
                                     </div>
                                 ))
                             }
@@ -99,9 +99,9 @@ const Gallery = ({data, dark}) => {
                             {
                                 potraitThree.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000}>
+                                        {/* <Fade left duration={1000}> */}
                                             <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
-                                        </Fade>
+                                        {/* </Fade> */}
                                     </div>
                                 ))
                             }
@@ -111,9 +111,9 @@ const Gallery = ({data, dark}) => {
                             {
                                 landscapeThree.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000}>
+                                        {/* <Fade left duration={1000}> */}
                                             <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
-                                        </Fade>
+                                        {/* </Fade> */}
                                     </div>
                                 ))
                             }

@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 import Modal from './Modal'
 import {AiOutlineClose} from 'react-icons/ai'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 const Event = ({data}) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,21 +17,21 @@ const Event = ({data}) => {
     return (
         <section className="event">
                 <div className="gallery__heading-wrapper">
-                    <Fade top duration={1000}>
+                    {/* <Fade top duration={1000}> */}
                         <div className="gallery__heading gallery__heading--secondary event__animate">
                             <h1>{data.heading}</h1>
                         </div>
                         <div className="gallery__sub-heading gallery__sub-heading--secondary event__animate">
                             <h3>{data.subHeading}</h3>
                         </div>
-                    </Fade>
+                    {/* </Fade> */}
                 </div>
             <div className="container">
                 <div className="row event__row">
                     {
                         data.events.map((event, index) => (
                             <React.Fragment key={index}>
-                                <Fade right duration={1000}>
+                                {/* <Fade right duration={1000}> */}
                                     <div className="event__card event__animate-card">
                                         <div className="event__box">
                                             <div className="event__picture">
@@ -44,7 +44,7 @@ const Event = ({data}) => {
                                             </div>
                                         </div>
                                     </div>
-                                </Fade>
+                                {/* </Fade> */}
                             </React.Fragment>
                         ))
                     }

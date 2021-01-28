@@ -2,7 +2,7 @@ import React from 'react'
 import {IoIosCall} from 'react-icons/io'
 import {HiMail} from 'react-icons/hi'
 import {ImWhatsapp} from 'react-icons/im'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 const Contact = ({dark}) => {
     return (
@@ -10,7 +10,7 @@ const Contact = ({dark}) => {
             <div className="container">
                 <div className="row">
                     <div className="contact__wrapper">
-                        <Fade left duration={1000}>
+                        {/* <Fade left duration={1000}> */}
                             <div className="contact__container">
                                 <div className="gallery__heading-wrapper" style={{alignItems: "flex-start"}}>
                                     <div className="gallery__heading">
@@ -45,10 +45,10 @@ const Contact = ({dark}) => {
                                     </div>
                                 </div>
                             </div>
-                        </Fade>
+                        {/* </Fade> */}
                     </div>
                     <div className="contact__wrapper contact__wrapper--secondary">
-                        <Fade right duration={1000}>
+                        {/* <Fade right duration={1000}> */}
                             <div className="contact__container">
                                 <div className="gallery__heading-wrapper">
                                     <div className="gallery__heading">
@@ -85,7 +85,7 @@ const Contact = ({dark}) => {
                                     </div>
                                 </form>
                             </div>
-                        </Fade>
+                        {/* </Fade> */}
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 
 const Page = ({data}) => {
@@ -12,17 +12,17 @@ const Page = ({data}) => {
             <div className="container">
                 <div className="row">
                     <div className="page__content">
-                        <Fade top duration={1200}>
+                        {/* <Fade top duration={1200}> */}
                             <h2 className="page__heading">About <br/> {data.heading}</h2>
-                        </Fade>
+                        {/* </Fade> */}
                         {
                             data.paragraph.map((para, index) => (
                                 <React.Fragment key={index}>
-                                    <Fade right duration={1500}>
+                                    {/* <Fade right duration={1500}> */}
                                         <p className="page__paragraph">
                                             {para}
                                         </p>
-                                    </Fade>
+                                    {/* </Fade> */}
                                 </React.Fragment>
                                 
                             ))

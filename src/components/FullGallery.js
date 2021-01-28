@@ -1,7 +1,7 @@
 import React from 'react'
 
 import TeamImage from '../images/2.jpg'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 const FullGallery = ({data}) => {
     return (
@@ -14,9 +14,9 @@ const FullGallery = ({data}) => {
                     <div className="fullgallery__wrapper">
                         {
                             data.gallery.map((gallery, index) => (
-                                <Fade bottom duration={1200} key={index}>
-                                    <img className="fullgallery__image" src={gallery.image} alt={gallery.alt} />
-                                </Fade>
+                                // <Fade bottom duration={1200} key={index}>
+                                    <img className="fullgallery__image" key={index} src={gallery.image} alt={gallery.alt} />
+                                // </Fade>
                             ))
                         }
                     </div>
