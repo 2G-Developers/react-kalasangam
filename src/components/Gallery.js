@@ -32,7 +32,7 @@ const Gallery = ({data, dark}) => {
         <section className={dark ? 'gallery gallery--dark': 'gallery'}>
             <div className="container">
                     <div className="gallery__heading-wrapper">
-                        <Fade top duration={1000} delay={600}>
+                        <Fade top duration={1000}>
                             <div className="gallery__heading gallery__animate">
                                 <h1>{data.heading}</h1>
                             </div>
@@ -48,7 +48,7 @@ const Gallery = ({data, dark}) => {
                             {
                                 potraitOne.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000} delay={800}>
+                                        <Fade left duration={1000}>
                                             <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
                                         </Fade>
                                     </div>
@@ -60,7 +60,7 @@ const Gallery = ({data, dark}) => {
                             {
                                 landscapeOne.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000} delay={800}>
+                                        <Fade left duration={1000}>
                                             <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
                                         </Fade>
                                     </div>
@@ -74,7 +74,7 @@ const Gallery = ({data, dark}) => {
                             {
                                 landscapeTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000} delay={800}>
+                                        <Fade left duration={1000}>
                                             <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
                                         </Fade>
                                     </div>
@@ -86,7 +86,7 @@ const Gallery = ({data, dark}) => {
                             {
                                 potraitTwo.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000} delay={800}>
+                                        <Fade left duration={1000}>
                                             <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
                                         </Fade>
                                     </div>
@@ -99,7 +99,7 @@ const Gallery = ({data, dark}) => {
                             {
                                 potraitThree.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000} delay={800}>
+                                        <Fade left duration={1000}>
                                             <div className="gallery__potrait gallery__animate-img" style={{backgroundImage: `url(${slide.image})`, margin: "0.9375rem 0"}}></div>
                                         </Fade>
                                     </div>
@@ -111,7 +111,7 @@ const Gallery = ({data, dark}) => {
                             {
                                 landscapeThree.map((slide, index) => (
                                     <div key={index}>
-                                        <Fade left duration={1000} delay={800}>
+                                        <Fade left duration={1000}>
                                             <div className="gallery__landscape gallery__animate-img" style={{backgroundImage: `url(${slide.image})`}}></div>
                                         </Fade>
                                     </div>

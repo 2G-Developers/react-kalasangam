@@ -11,12 +11,12 @@ const About = ({dark, data}) => {
                 <div className="row">
                     <div className="about__wrapper">
                         <div className="about__content">
-                            <Fade top duration={1000} delay={600}>
+                            <Fade top duration={1000}>
                                 <div className="about__heading desktop about__animate">
                                     <h1>{data.heading}</h1>
                                 </div>
                             </Fade>
-                            <Fade left duration={1000} delay={600}>
+                            <Fade left duration={1000}>
                                 <p className="about__paragraph about__animate">
                                     {data.shortDescription}
                                 </p>
@@ -31,16 +31,9 @@ const About = ({dark, data}) => {
                         <div className="about__heading mobile about__animate">
                             <h1>{data.heading}</h1>
                         </div>
-                        <Fade right duration={1500} delay={1000}>
+                        <Fade right duration={1500}>
                             <div className="about__figure">
                                 <img src={data.image} alt={data.alt} className="about__image about__animate-img" />
-
-                                {/* <div className="about__overlay">
-                                    <div className="about__icon">
-                                        <a href="/" className="about__link" aria-label="social media"><FaFacebookF /></a>
-                                        <a href="/" className="about__link" aria-label="social media"><GrInstagram /></a>
-                                    </div>
-                                </div> */}
                             </div>
                         </Fade>
                     </div>

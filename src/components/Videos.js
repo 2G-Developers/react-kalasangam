@@ -30,7 +30,7 @@ const Videos = ({data}) => {
                         {
                             data.url.map((item, index) => (
                                 <React.Fragment key={index}>
-                                    <Fade left duration={1000} delay={800}>
+                                    <Fade left duration={1000}>
                                         <div className="videos-showcase__card">
                                             <ReactPlayer light={true} playing={true} onError={(err) => console.log(err)} url={item} className="videos-showcase__youtube" controls={true} width="100%" />
                                         </div>

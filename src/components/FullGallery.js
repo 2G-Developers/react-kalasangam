@@ -14,7 +14,7 @@ const FullGallery = ({data}) => {
                     <div className="fullgallery__wrapper">
                         {
                             data.gallery.map((gallery, index) => (
-                                <Fade bottom duration={1200} delay={600} key={index}>
+                                <Fade bottom duration={1200} key={index}>
                                     <img className="fullgallery__image" src={gallery.image} alt={gallery.alt} />
                                 </Fade>
                             ))

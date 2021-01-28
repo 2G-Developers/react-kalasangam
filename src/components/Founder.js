@@ -10,12 +10,12 @@ const Founder = ({data, dark}) => {
             <div className="container">
                 <div className="row">
                     <div className="founder__wrapper">
-                        <Fade top duration={1000} delay={600}>
+                        <Fade top duration={1000}>
                             <div className="founder__heading mobile founder__animate">
                                 <h1>Anushree Gour</h1>
                             </div>
                         </Fade>
-                        <Fade left duration={1000} delay={800}>
+                        <Fade left duration={1000}>
                             <div className="founder__figure founder__animate-img" style={{backgroundImage: `url(${data.image})`}}>
                                 {/* <img src={FounderImage} alt="Founder" className="founder__image" /> */}
                             </div>
@@ -24,7 +24,7 @@ const Founder = ({data, dark}) => {
 
                     <div className="founder__wrapper">
                         <div className="founder__content">
-                            <Fade top duration={1000} delay={600}>
+                            <Fade top duration={1000}>
                                 <div className="founder__heading desktop founder__animate">
                                     <h1>Anushree Gour</h1>
                                 </div>
@@ -32,7 +32,7 @@ const Founder = ({data, dark}) => {
                             {
                                 data.shortDescription.map((description, index) => (
                                     <React.Fragment key={index}>
-                                        <Fade right duration={1200} delay={1000}>
+                                        <Fade right duration={1200}>
                                             <p className="founder__paragraph founder__animate">
                                             {description}
                                             </p>
@@ -41,7 +41,7 @@ const Founder = ({data, dark}) => {
                                 ))
                             }
                             
-                            <Fade right duration={1200} delay={1400}>
+                            <Fade right duration={1200}>
                                 <div className="founder__cta founder__animate">
                                     <Link to="/founder" className="founder__button">Read More</Link>
                                 </div>

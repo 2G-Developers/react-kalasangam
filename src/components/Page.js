@@ -12,13 +12,13 @@ const Page = ({data}) => {
             <div className="container">
                 <div className="row">
                     <div className="page__content">
-                        <Fade top duration={1200} delay={600}>
+                        <Fade top duration={1200}>
                             <h2 className="page__heading">About <br/> {data.heading}</h2>
                         </Fade>
                         {
                             data.paragraph.map((para, index) => (
                                 <React.Fragment key={index}>
-                                    <Fade right duration={1500} delay={800}>
+                                    <Fade right duration={1500}>
                                         <p className="page__paragraph">
                                             {para}
                                         </p>

@@ -10,7 +10,7 @@ const Contact = ({dark}) => {
             <div className="container">
                 <div className="row">
                     <div className="contact__wrapper">
-                        <Fade left duration={1000} delay={600}>
+                        <Fade left duration={1000}>
                             <div className="contact__container">
                                 <div className="gallery__heading-wrapper" style={{alignItems: "flex-start"}}>
                                     <div className="gallery__heading">
@@ -48,7 +48,7 @@ const Contact = ({dark}) => {
                         </Fade>
                     </div>
                     <div className="contact__wrapper contact__wrapper--secondary">
-                        <Fade right duration={1000} delay={800}>
+                        <Fade right duration={1000}>
                             <div className="contact__container">
                                 <div className="gallery__heading-wrapper">
                                     <div className="gallery__heading">

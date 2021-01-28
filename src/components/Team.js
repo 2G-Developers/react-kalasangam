@@ -43,7 +43,7 @@ const Team = ({data, dark}) => {
         <section className={dark ? 'team team--dark': 'team'}>
             <div className="container">
                 <div className="gallery__heading-wrapper">
-                    <Fade top duration={1000} delay={600}>
+                    <Fade top duration={1000}>
                         <div className="gallery__heading team__animate">
                             <h1>{data.heading}</h1>
                         </div>
@@ -58,7 +58,7 @@ const Team = ({data, dark}) => {
                             data.teams.map((team, index) => (
                                 <div className="team__card team__animate-card" key={index}>
                                     <div className="team__profile">
-                                        <Fade left duration={1000} delay={1000}>
+                                        <Fade left duration={1000}>
                                             <img className="team__image" src={team.image} alt={team.name} />
                                         </Fade>
                                         <div className="team__overlay">

@@ -17,7 +17,7 @@ const Event = ({data}) => {
     return (
         <section className="event" style={{backgroundImage: `url(https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/dancers_dzud3h.webp)`}}>
                 <div className="gallery__heading-wrapper">
-                    <Fade top duration={1000} delay={600}>
+                    <Fade top duration={1000}>
                         <div className="gallery__heading gallery__heading--secondary event__animate">
                             <h1>{data.heading}</h1>
                         </div>
@@ -31,7 +31,7 @@ const Event = ({data}) => {
                     {
                         data.events.map((event, index) => (
                             <React.Fragment key={index}>
-                                <Fade right duration={1000} delay={800}>
+                                <Fade right duration={1000}>
                                     <div className="event__card event__animate-card">
                                         <div className="event__box">
                                             <div className="event__picture">
