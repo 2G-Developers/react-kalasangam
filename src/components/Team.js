@@ -58,9 +58,7 @@ const Team = ({data, dark}) => {
                             data.teams.map((team, index) => (
                                 <div className="team__card team__animate-card" key={index}>
                                     <div className="team__profile">
-                                        <Fade left duration={1000}>
-                                            <img className="team__image" src={team.image} alt={team.name} />
-                                        </Fade>
+                                        <img className="team__image" src={team.image} alt={team.name} />
                                         <div className="team__overlay">
                                             <div className="team__icon">
                                                 <a href={team.facebook} className="team__link" aria-label="social media"><FaFacebookF /></a>

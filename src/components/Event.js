@@ -15,7 +15,7 @@ const Event = ({data}) => {
     }
 
     return (
-        <section className="event" style={{backgroundImage: `url(https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/dancers_dzud3h.webp)`}}>
+        <section className="event">
                 <div className="gallery__heading-wrapper">
                     <Fade top duration={1000}>
                         <div className="gallery__heading gallery__heading--secondary event__animate">

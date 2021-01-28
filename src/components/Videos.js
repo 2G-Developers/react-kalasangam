@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player/lazy'
 import Slider from "react-slick";
-import Fade from 'react-reveal/Fade';
 
 const Videos = ({data}) => {
     const settings = {
@@ -30,11 +29,9 @@ const Videos = ({data}) => {
                         {
                             data.url.map((item, index) => (
                                 <React.Fragment key={index}>
-                                    <Fade left duration={1000}>
-                                        <div className="videos-showcase__card">
-                                            <ReactPlayer light={true} playing={true} onError={(err) => console.log(err)} url={item} className="videos-showcase__youtube" controls={true} width="100%" />
-                                        </div>
-                                    </Fade>
+                                    <div className="videos-showcase__card">
+                                        <ReactPlayer light={true} playing={true} onError={(err) => console.log(err)} url={item} className="videos-showcase__youtube" controls={true} width="100%" />
+                                    </div>
                                 </React.Fragment>
                             ))
                         }
