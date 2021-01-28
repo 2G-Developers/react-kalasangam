@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import Slider from "react-slick";
 // import {IoMdArrowForward} from 'react-icons/io';
 import {IoArrowBack, IoArrowForward} from 'react-icons/io5';
+import { Link } from 'gatsby';
 
 const Banner = ({slides}) => {
     const settings = {
@@ -55,6 +56,8 @@ const Banner = ({slides}) => {
                         <div className="dancing__letter dancing__letter--second"><span className="dancing__hand--left"></span>G<span className="dancing__hand--right"></span></div>
                         <div className="dancing__letter dancing__letter--third"><span className="dancing__hand--left"></span>A<span className="dancing__hand--right"></span></div>
                         <div className="dancing__letter dancing__letter--fourth"><span className="dancing__hand--left"></span>M</div>
+                        <br/>
+                        <Link to="/contact" className="banner__button">Get in touch</Link>
                     </div>
                     <div className="banner__disco"></div>
                 </div>

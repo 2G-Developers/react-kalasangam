@@ -46,6 +46,23 @@
         object-position: center;
     }
 
+    &__button {
+        color: #fff;
+        background-color: #fe1a93;
+        padding: .5rem 1.5rem;
+        border-radius: 20px;
+        margin-top: 1rem;
+        display: inline-block;
+        border: none;
+        z-index: 1000;
+        text-decoration: none;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #000;
+        }
+    }
+
     &__disco {
         position: absolute;
         top: 0;
@@ -206,12 +223,12 @@
                 top:80px;
                 transform:rotate(45deg);
                 transform-origin:0 0;
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove 2s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
 
@@ -220,12 +237,12 @@
                 top:70px;
                 transform:rotate(-135deg);
                 transform-origin:0 0;
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove2 2s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
         }
@@ -242,12 +259,12 @@
                 transform:rotate(20deg);
                 top:80px;
                 left:25px;
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove4 4s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
 
@@ -255,12 +272,12 @@
                 transform:rotate(340deg);
                 top:80px;
                 left:55px;
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove3 4s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
         }
@@ -277,12 +294,12 @@
                 transform:rotate(45deg);
                 top:60px;
                 left:10px;
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove 4s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
 
@@ -290,12 +307,12 @@
                 transform:rotate(340deg);
                 top:80px;
                 left:35px;
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove3 2s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
         }
@@ -311,12 +328,12 @@
             & .dancing__hand--left {
                 top:95px;
                 left:20px;
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove5 2s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
 
@@ -324,12 +341,12 @@
                 top:85px; 
                 left:70px;
                 transform:rotate(-135deg);
-                opacity: 0;
+                display: none;
                 animation: none;
                 
                 @media screen and (min-width: 992px) {
                     animation: handMove2 2s infinite;
-                    opacity: 1;
+                    display: block;
                 }
             }
         }
