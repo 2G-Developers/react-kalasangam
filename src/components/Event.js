@@ -32,8 +32,12 @@ const Event = ({data}) => {
                         data.events.map((event, index) => (
                             <React.Fragment key={index}>
                                 {/* <Fade right duration={1000}> */}
-                                    <div className="event__card event__animate-card">
-                                        <div className="event__box">
+                                    <div 
+                                    data-sal="slide-up"
+                                    data-sal-duration="1000"
+                                    className="event__card event__animate-card">
+                                        <div 
+                                        className="event__box">
                                             <div className="event__picture">
                                                 <img src={event.image} alt={event.alt} />
                                             </div>

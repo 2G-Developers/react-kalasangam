@@ -11,12 +11,19 @@ const Founder = ({data, dark}) => {
                 <div className="row">
                     <div className="founder__wrapper">
                         {/* <Fade top duration={1000}> */}
-                            <div className="founder__heading mobile founder__animate">
+                            <div 
+                            data-sal="slide-up"
+                            data-sal-duration="1000"
+                            className="founder__heading mobile founder__animate">
                                 <h1>Anushree Gour</h1>
                             </div>
                         {/* </Fade> */}
                         {/* <Fade left duration={1000}> */}
-                            <div className="founder__figure founder__animate-img">
+                            <div 
+                                data-sal="slide-up"
+                                data-sal-duration="1000"
+                                className="founder__figure founder__animate-img"
+                            >
                                 <img src={data.image} alt="Founder" className="founder__image" />
                             </div>
                         {/* </Fade> */}
@@ -25,7 +32,10 @@ const Founder = ({data, dark}) => {
                     <div className="founder__wrapper">
                         <div className="founder__content">
                             {/* <Fade top duration={1000}> */}
-                                <div className="founder__heading desktop founder__animate">
+                                <div 
+                                data-sal="slide-up"
+                                data-sal-duration="1000"
+                                className="founder__heading desktop founder__animate">
                                     <h1>Anushree Gour</h1>
                                 </div>
                             {/* </Fade> */}
@@ -33,7 +43,10 @@ const Founder = ({data, dark}) => {
                                 data.shortDescription.map((description, index) => (
                                     <React.Fragment key={index}>
                                         {/* <Fade right duration={1200}> */}
-                                            <p className="founder__paragraph founder__animate">
+                                            <p 
+                                            data-sal="slide-up"
+                                            data-sal-duration="1000"
+                                            className="founder__paragraph founder__animate">
                                             {description}
                                             </p>
                                         {/* </Fade> */}
