@@ -7,10 +7,6 @@
     &__wrapper {
         width: 100%;
         height: 100%;
-        // display: flex;
-        // justify-content: center;
-        // overflow: hidden;
-        // align-items: center;
         position: relative;
     }
 
@@ -50,12 +46,23 @@
         object-position: center;
     }
 
+    &__disco {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        opacity: .7;
+        animation: changeCol 1s infinite;
+    }
+
     &__navigation {
         position: absolute;
         bottom: 50px;
         right: 10px;
         display: flex;
-        z-index: 10;
+        z-index: 1000;
 
         @media screen and (min-width: 768px) {
             right: 50px;
@@ -137,15 +144,14 @@
     height: 20px !important;
 }
 
-// Animation
-.slick-slider div.slick-active .banner__image {
-    -webkit-animation: myMove 8s 1 ease-in-out;
-    -moz-animation: myMove 8s 1 ease-in-out;
-    -o-animation: myMove 8s 1 ease-in-out;
-    -ms-animation: myMove 8s 1 ease-in-out;
-    animation: myMove 8s 1 ease-in-out;
-  }
-
+// Banner Zoom Animation
+// .slick-slider div.slick-active .banner__image {
+    // -webkit-animation: myMove 8s 1 ease-in-out;
+    // -moz-animation: myMove 8s 1 ease-in-out;
+    // -o-animation: myMove 8s 1 ease-in-out;
+    // -ms-animation: myMove 8s 1 ease-in-out;
+    // animation: myMove 8s 1 ease-in-out;
+// }
 
 @keyframes myMove {
     from { transform: scale(1.0,1.0); transform-origin: 50% 50%; }
@@ -166,4 +172,265 @@
   @-ms-keyframes myMove {
     from { -ms-transform: scale(1.0,1.0); -ms-transform-origin: 50% 50%; }
     to { -ms-transform: scale(1.1,1.1); -ms-transform-origin: 50% 0%; }
+  }
+
+.dancing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    
+    &__letter {
+        font-size: 28px;
+        display:inline-block;
+        position:relative;
+        font-weight: 800;
+
+        @media screen and (min-width: 992px) {
+            font-size: 125px;
+        }
+
+        &--first {
+            color:#00ff5e;
+            animation: movemobile 2s infinite;
+
+            @media screen and (min-width: 992px) {
+                animation: move 2s infinite;
+            }
+
+            & .dancing__hand--left {
+                left:8px;
+                top:80px;
+                transform:rotate(45deg);
+                transform-origin:0 0;
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove 2s infinite;
+                    opacity: 1;
+                }
+            }
+
+            & .dancing__hand--right {
+                left:60px;
+                top:70px;
+                transform:rotate(-135deg);
+                transform-origin:0 0;
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove2 2s infinite;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &--second {
+            color:#ff52bf;
+            animation: move2mobile 2s infinite;
+
+            @media screen and (min-width: 992px) {
+                animation: move2 2s infinite;
+            }
+            
+            & .dancing__hand--left {
+                transform:rotate(20deg);
+                top:80px;
+                left:25px;
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove4 4s infinite;
+                    opacity: 1;
+                }
+            }
+
+            & .dancing__hand--right {
+                transform:rotate(340deg);
+                top:80px;
+                left:55px;
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove3 4s infinite;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &--third {
+            color: #ffff52;
+            animation: movemobile 2s infinite;
+
+            @media screen and (min-width: 992px) {
+                animation: move 2s infinite;
+            }
+
+            & .dancing__hand--left {
+                transform:rotate(45deg);
+                top:60px;
+                left:10px;
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove 4s infinite;
+                    opacity: 1;
+                }
+            }
+
+            & .dancing__hand--right {
+                transform:rotate(340deg);
+                top:80px;
+                left:35px;
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove3 2s infinite;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &--fourth {
+            color: #d452ff;
+            animation: move2mobile 2s infinite;
+
+            @media screen and (min-width: 992px) {
+                animation: move2 2s infinite;
+            }
+
+            & .dancing__hand--left {
+                top:95px;
+                left:20px;
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove5 2s infinite;
+                    opacity: 1;
+                }
+            }
+
+            .dancing__hand--right {
+                top:85px; 
+                left:70px;
+                transform:rotate(-135deg);
+                opacity: 0;
+                animation: none;
+                
+                @media screen and (min-width: 992px) {
+                    animation: handMove2 2s infinite;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__hand {
+
+        &--left {
+            display: block;
+            border: 3px solid #000;
+            height: 20px;
+            position: absolute;
+            transform-origin: 0 0;
+    
+            &::after {
+                content: "";
+                background: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: absolute;
+                left: -10px;
+                top: 15px;
+            }
+        }
+
+        &--right {
+            display: block;
+            border: 3px solid #000;
+            height: 20px;
+            position: absolute;
+            transform-origin: 0 0;
+
+            &::after {
+                content:"";
+                background:#fff;
+                width:20px;
+                height:20px;
+                border-radius:50%;
+                position:absolute;
+                left:-10px;
+                top:15px;
+            }
+        }
+    }
+}
+
+// Hand Animation
+
+@keyframes handMove{
+    0%,100%{transform:rotate(45deg);}
+    50%{transform:rotate(0deg);}
+    75%{transform:rotate(180deg);}
+}
+
+@keyframes handMove2{
+    0%,100%{transform:rotate(-135deg);}
+    50%{transform:rotate(-45deg);}
+}
+@keyframes handMove3{
+    0%,100%{transform:rotate(340deg);}
+    50%{transform:rotate(45deg);}
+}
+@keyframes handMove4{
+    0%,100%{transform:rotate(20deg);}
+    50%{transform:rotate(340deg);}
+}
+@keyframes handMove5{
+    0%,100%{transform:rotate(0deg);}
+    50%{transform:rotate(180deg);}
+}
+@keyframes move{
+    0%,100%{transform:translate(0,0);}
+    50%{transform:translate(20px,0);}
+    75%{transform:translate(0px,20px);}
+}
+
+// Move mobile
+@keyframes movemobile{
+    0%,100%{transform:translate(0,0);}
+    50%{transform:translate(5px,0);}
+    75%{transform:translate(0px,5px);}
+}
+
+@keyframes move2{
+    0%,100%{transform:translate(0,0);}
+    50%{transform:translate(-20px,0);}
+    75%{transform:translate(0px,-20px);}
+}
+
+// Move2 mobile
+@keyframes move2mobile{
+    0%,100%{transform:translate(0,0);}
+    50%{transform:translate(-5px,0);}
+    75%{transform:translate(0px,-5px);}
+}
+
+@keyframes changeCol{
+    0%{background:#1f004d;}
+    25%{background:#c2c200;}
+    50%{background:#005207;}
+    50%{background:#4d002f;}
+    100%{background:#c2005a ;}
   }
