@@ -60,7 +60,6 @@ const Banner = ({slides}) => {
                         <div className="dancing__letter dancing__letter--third"><span className="dancing__hand--left"></span>A<span className="dancing__hand--right"></span></div>
                         <div className="dancing__letter dancing__letter--fourth"><span className="dancing__hand--left"></span>M<span className="dancing__hand--right"></span></div>
                         <br/>
-                        {!lightActive ? <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZapOff className="banner__forward--light" color="#f2a94e" /></button> : <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZap className="banner__forward--light" color="#f2a94e" /></button>}
                         <Link to="/contact" className="banner__button">Get in touch</Link>
                     </div>
                     {lightActive ?<div className="banner__disco"></div>: null}
@@ -69,6 +68,10 @@ const Banner = ({slides}) => {
                 <div className="banner__navigation">
                     <IoArrowBack className="banner__back" onClick={prevSlide} />
                     <IoArrowForward className="banner__forward" onClick={nextSlide} />
+                </div>
+
+                <div className="banner__control">
+                {!lightActive ? <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZapOff className="banner__forward--light" color="#fff" /></button> : <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZap className="banner__forward--light" color="#fff" /></button>}
                 </div>
             </div>
         </section>
