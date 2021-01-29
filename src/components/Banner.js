@@ -1,8 +1,10 @@
 import React, {useRef, useState} from 'react'
 import Slider from "react-slick";
-// import {IoMdArrowForward} from 'react-icons/io';
+
 import {IoArrowBack, IoArrowForward} from 'react-icons/io5';
 import {FiZapOff, FiZap} from 'react-icons/fi'
+import {BiVolumeFull, BiVolumeMute} from 'react-icons/bi'
+
 import { Link } from 'gatsby';
 
 const Banner = ({slides}) => {
@@ -71,7 +73,8 @@ const Banner = ({slides}) => {
                 </div>
 
                 <div className="banner__control">
-                    {!lightActive ? <FiZapOff onClick={() => setLightActive(prevState => !prevState)} className="banner__forward" color="#fff" /> : <FiZap onClick={() => setLightActive(prevState => !prevState)} className="banner__forward" color="#fff" />}
+                    {lightActive ? <FiZapOff onClick={() => setLightActive(prevState => !prevState)} className="banner__forward" color="#fff" /> : <FiZap onClick={() => setLightActive(prevState => !prevState)} className="banner__forward" color="#fff" />}
+                    {lightActive ? <BiVolumeFull className="banner__forward" /> : <BiVolumeMute className="banner__forward" />}
                 </div>
             </div>
         </section>
