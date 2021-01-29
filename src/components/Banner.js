@@ -63,7 +63,7 @@ const Banner = ({slides}) => {
                         {!lightActive ? <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZapOff className="banner__forward--light" color="#f2a94e" /></button> : <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZap className="banner__forward--light" color="#f2a94e" /></button>}
                         <Link to="/contact" className="banner__button">Get in touch</Link>
                     </div>
-                    {!lightActive ?<div className="banner__disco"></div>: null}
+                    {lightActive ?<div className="banner__disco"></div>: null}
                 </div>
 
                 <div className="banner__navigation">
