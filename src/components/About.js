@@ -12,12 +12,18 @@ const About = ({dark, data}) => {
                     <div className="about__wrapper">
                         <div className="about__content">
                             {/* <Fade top duration={1000}> */}
-                                <div className="about__heading desktop about__animate">
+                                <div 
+                                data-sal="slide-up"
+                                data-sal-duration="1000"
+                                className="about__heading desktop about__animate">
                                     <h1>{data.heading}</h1>
                                 </div>
                             {/* </Fade> */}
                             {/* <Fade left duration={1000}> */}
-                                <p className="about__paragraph about__animate">
+                                <p 
+                                data-sal="slide-up"
+                                data-sal-duration="1000"
+                                className="about__paragraph about__animate">
                                     {data.shortDescription}
                                 </p>
                                 
@@ -32,7 +38,10 @@ const About = ({dark, data}) => {
                             <h1>{data.heading}</h1>
                         </div>
                         {/* <Fade right duration={1500}> */}
-                            <div className="about__figure">
+                            <div 
+                            data-sal="slide-up"
+                            data-sal-duration="1000"
+                            className="about__figure">
                                 <img src={data.image} alt={data.alt} className="about__image about__animate-img" />
                             </div>
                         {/* </Fade> */}

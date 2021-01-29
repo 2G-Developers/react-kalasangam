@@ -15,7 +15,10 @@ const FullGallery = ({data}) => {
                         {
                             data.gallery.map((gallery, index) => (
                                 // <Fade bottom duration={1200} key={index}>
-                                    <img className="fullgallery__image" key={index} src={gallery.image} alt={gallery.alt} />
+                                    <img 
+                                    data-sal="slide-up"
+                                    data-sal-duration="1000"
+                                    className="fullgallery__image" key={index} src={gallery.image} alt={gallery.alt} />
                                 // </Fade>
                             ))
                         }
