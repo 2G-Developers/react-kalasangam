@@ -120,6 +120,38 @@
             background: #fe1a93;
             transform: scale(1.05);
         }
+
+        &--light {
+            width: 100%;
+            height: 100%;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            background: #000d1a;
+            border-radius: 50px;
+            padding: 10px;
+            margin-right: 1rem;
+            user-select: none;
+            transition: .3s;
+            font-size: 1.5rem;
+
+            
+        }
+
+        &--button {
+            width: 50px;
+            border-radius: 50px;
+            height: 50px;
+            outline: none;
+            background: transparent;
+            display: block;
+            margin: 0 auto;
+            border: none;
+
+            &:active, &:focus {
+                outline: none;
+            }
+        }
     }
 }
 

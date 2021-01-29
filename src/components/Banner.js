@@ -1,10 +1,13 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import Slider from "react-slick";
 // import {IoMdArrowForward} from 'react-icons/io';
 import {IoArrowBack, IoArrowForward} from 'react-icons/io5';
+import {FiZapOff, FiZap} from 'react-icons/fi'
 import { Link } from 'gatsby';
 
 const Banner = ({slides}) => {
+    const [lightActive, setLightActive] = useState(true)
+
     const settings = {
         dots: false,
         infinite: true,
@@ -57,9 +60,10 @@ const Banner = ({slides}) => {
                         <div className="dancing__letter dancing__letter--third"><span className="dancing__hand--left"></span>A<span className="dancing__hand--right"></span></div>
                         <div className="dancing__letter dancing__letter--fourth"><span className="dancing__hand--left"></span>M<span className="dancing__hand--right"></span></div>
                         <br/>
+                        {!lightActive ? <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZapOff className="banner__forward--light" color="#f2a94e" /></button> : <button className="banner__forward--button" onClick={() => setLightActive(prevState => !prevState)}><FiZap className="banner__forward--light" color="#f2a94e" /></button>}
                         <Link to="/contact" className="banner__button">Get in touch</Link>
                     </div>
-                    <div className="banner__disco"></div>
+                    {!lightActive ?<div className="banner__disco"></div>: null}
                 </div>
 
                 <div className="banner__navigation">
