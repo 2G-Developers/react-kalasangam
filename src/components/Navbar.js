@@ -44,7 +44,8 @@ const Navbar = () => {
                 <img src="https://res.cloudinary.com/gopal1996/image/upload/v1610643082/studioKalasangam/svg-dance_xt4sbb.png" className="nav__image nav__image--left" alt="Svg Dance" />
                 {
                     menuData.map((data, index) => (
-                        <li key={index} onClick={() => setNavbar(false)} className="nav-item"><Link to={data.link} className={activeNav === data.link ? 'nav__link nav__link--active': 'nav__link'} onClick={() => setActiveNav(data.link)}>{data.title}</Link></li>
+                        // eslint-disable-next-line
+                        <li key={index} onClick={() => setNavbar(false)} onKeyPress={() => setNavbar(false)} className="nav-item"><Link to={data.link} className={activeNav === data.link ? 'nav__link nav__link--active': 'nav__link'} onClick={() => setActiveNav(data.link)}>{data.title}</Link></li>
                     ))
                 }
                 <img src="https://res.cloudinary.com/gopal1996/image/upload/v1610643082/studioKalasangam/svg-group-dance_fv5rk9.png" className="nav__image nav__image--right floating" alt="Svg Group Dance" />
