@@ -12,6 +12,10 @@ export const menuData = [
         link: '/founder'
     },
     {
+        title: 'Faculty',
+        link: '/#team'
+    },
+    {
         title: 'gallery',
         link: '/gallery'
     },

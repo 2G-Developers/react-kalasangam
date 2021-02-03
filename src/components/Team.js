@@ -40,7 +40,7 @@ const Team = ({data, dark}) => {
     };
 
     return (
-        <section className={dark ? 'team team--dark': 'team'}>
+        <section id="team" className={dark ? 'team team--dark': 'team'}>
             <div className="container">
                 <div className="gallery__heading-wrapper">
                     {/* <Fade top duration={1000}> */}
