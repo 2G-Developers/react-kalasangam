@@ -79,6 +79,19 @@
         font-family: 'Dancing Script', cursive;
         letter-spacing: 5px;
         margin-bottom: 2.5rem;
+        
+        h1 {
+            position: relative;
+            border: 5px solid #1E0E62;
+            border-left: 0;
+            padding: 5px 0 0 0;
+            border-right: 0;
+            transform: rotate(-3deg);
+            
+            @media screen and (min-width: 768px) {
+                padding: 5px 0 14px 0;
+            }
+        }
     }
 
     &__figure {
