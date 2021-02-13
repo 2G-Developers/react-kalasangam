@@ -15,11 +15,11 @@ const Videos = ({data}) => {
 
     return (
         <section className="videos-showcase">
-            <div className="container">
+            {/* <div className="container"> */}
                 <div className="gallery__heading-wrapper">
-                        <div className="gallery__heading gallery__animate">
+                        {/* <div className="gallery__heading gallery__animate">
                             <h1>{data.heading}</h1>
-                        </div>
+                        </div> */}
                         <div className="gallery__sub-heading gallery__animate">
                             <h3>{data.subHeading}</h3>
                         </div>
@@ -41,7 +41,7 @@ const Videos = ({data}) => {
                     <div className="founder__cta" style={{paddingTop: "2.5rem"}}>
                         <a href="https://www.youtube.com/" className="founder__button gallery__animate" target="_blank" rel="noreferrer">Watch More on Youtube</a>
                     </div>
-            </div>
+            {/* </div> */}
         </section>
     )
 }
