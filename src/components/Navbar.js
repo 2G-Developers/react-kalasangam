@@ -41,7 +41,7 @@ const Navbar = () => {
             </div>
             
             <ul className={navbar ? "nav__list nav__list--active": "nav__list"}>
-                <img src="https://res.cloudinary.com/gopal1996/image/upload/v1613245825/studioKalasangam/6_1_ulz7as.png" className="nav__image nav__image--left" alt="Svg Dance" />
+                <img src="https://res.cloudinary.com/gopal1996/image/upload/v1615578160/studioKalasangam/Founder2_kvv9d2.png" className="nav__image nav__image--left" alt="Svg Dance" />
                 {
                     menuData.map((data, index) => (
                         // eslint-disable-next-line

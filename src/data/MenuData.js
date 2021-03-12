@@ -20,6 +20,10 @@ export const menuData = [
         link: '/gallery'
     },
     {
+        title: 'Testimonials',
+        link: '/testimonials'
+    },
+    {
         title: 'Contact',
         link: '/contact'
     },

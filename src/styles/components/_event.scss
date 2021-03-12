@@ -109,11 +109,18 @@
         padding: 5px 0;
         text-align: center;
         text-transform: uppercase;
+        user-select: none;
         background: #fff;
         color: #c6185d;
         text-decoration: none;
         cursor: pointer;
         outline: none;
+        transition: .5s;
+
+        &:hover {
+            background: #c6185d;
+            color: #fff;
+        }
 
         &:focus, &:active {
             outline: none;

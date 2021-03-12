@@ -9,6 +9,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Event from "../components/Event"
 // import Videos from "../components/Videos"
+import Testimonials from "../components/Testimonials"
 import ErrorBoundary from "../components/ErrorBoundary"
 
 import '../styles/main.scss'
@@ -21,6 +22,7 @@ import { AboutPageData } from '../data/AboutPageData'
 import { FounderPageData } from '../data/FounderPageData'
 // import { VideosData } from '../data/VideosData'
 import { EventData } from '../data/EventData'
+import { testimonialsData } from '../data/TestimonialsData'
 
 // markup
 const IndexPage = () => {
@@ -37,6 +39,7 @@ const IndexPage = () => {
         <Gallery data={GalleryData} />
         {/* <Videos data={VideosData} /> */}
         <Event data={EventData} />
+        <Testimonials data={testimonialsData} />
         <Contact />
         <Footer />
       </main>
