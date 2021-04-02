@@ -18,7 +18,7 @@ const Testimonials = ({data, isPage}) => {
                 <div className="row ">
                     <div className="testimonials__row">
                         {
-                            !isPage ? data.slice(1,4).map((item, index) => (
+                            !isPage ? data.slice(0,3).map((item, index) => (
                                 <React.Fragment key={index}>
                                     <div className="testimonials__box">
                                         <div className="testimonials__imgbox">
