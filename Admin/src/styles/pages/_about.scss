@@ -1,0 +1,40 @@
+.about {
+    position: relative;
+
+    &__image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 1rem;
+    }
+
+    &__cta {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 1rem;
+    }
+
+    &__success {
+        width: 100%;
+        padding: 1rem 0;
+        background: #22a24c;
+        color: #fff;
+        border-radius: 3px;
+    }
+
+    &__text {
+        text-align: left;
+    }
+}
