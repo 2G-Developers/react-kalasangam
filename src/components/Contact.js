@@ -25,9 +25,9 @@ const Contact = ({dark}) => {
                                     </div>
 
                                     <div className="contact__details">
-                                        <a href="mailto:info@kalasangam.com" className="contact__link"><IoIosCall className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
-                                        <a href="mailto:info@kalasangam.com" className="contact__link"><HiMail className="contact__icons" color="#D91D52" />info@kalasangam.com</a>
-                                        <a href="mailto:info@kalasangam.com" className="contact__link"><ImWhatsapp className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
+                                        <a href="mailto:info@studiokalasangam.com" className="contact__link"><IoIosCall className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
+                                        <a href="mailto:info@studiokalasangam.com" className="contact__link"><HiMail className="contact__icons" color="#D91D52" />info@studiokalasangam.com</a>
+                                        <a href="mailto:info@studiokalasangam.com" className="contact__link"><ImWhatsapp className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
                                     </div>
                                 </div>
 
