@@ -12,7 +12,7 @@ export const testimonialsData = [
         role: ''
     }, 
     {
-        content: 'Anushree is choreographer for everyone, she has so much passion for dance, unbelievable.In spite of leg injury she decided to set our dance.Thank you so much Anushree, Kiran and Ishita. We enjoyed so much our dance sessions and practice afterwards.Our performance was praised by audiences and all credit goes to u and ur teams. ou made dance easy for us.',
+        content: 'Anushree is choreographer for everyone, she has so much passion for dance, unbelievable.In spite of leg injury she decided to set our dance.Thank you so much Anushree, Kiran and Ishita. We enjoyed so much our dance sessions and practice afterwards.Our performance was praised by audiences and all credit goes to u and ur teams. You made dance easy for us.',
         image: 'https://scontent-maa2-1.xx.fbcdn.net/v/t1.6435-1/p200x200/65129804_10213852072991274_5289058521998950400_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=XV2QnMti3ncAX_qjK7K&_nc_ht=scontent-maa2-1.xx&tp=6&oh=41d507dfebeee2d3c7c2f7280d857529&oe=608E03F1',
         name: 'Priyanka Gugale',
         role: ''
