@@ -1,151 +1,154 @@
 .nav {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  font-family: "Poppins", sans-serif;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+
+    @media screen and (min-width: 768px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 500px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      width: 600px;
+    }
+
+    &--left {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &--right {
+      position: absolute;
+      //   top: 50%;
+      right: 0;
+      //   transform: translateY(-50%);
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  &__list {
     position: fixed;
-    font-family: 'Poppins', sans-serif;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 1000;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+
+    &--active {
+      transform: translateY(0);
+      background: #fff;
+    }
+
+    &--active ~ .nav__hamburger span:first-child {
+      transform: rotate(45deg);
+    }
+
+    &--active ~ .nav__hamburger span:nth-child(2) {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+
+    &--active ~ .nav__hamburger span:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 35px;
+    transition: all 0.3s;
+    user-select: none;
+    padding: 0 1rem;
+    background: #fe1a93;
+    margin-bottom: 1rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &--active {
+      background: #000;
+    }
+
+    &:hover {
+      background: #000;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) .nav__link {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__hamburger {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
     z-index: 2000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
 
-    &__image {
-        max-width: 100%;
-        height: auto;
-        width: 150px;
-
-        @media screen and (min-width: 768px) {
-            width: 300px;
-        }
-
-        @media screen and (min-width: 992px) {
-            width: 500px;
-        }
-
-        @media screen and (min-width: 1120px) {
-            width: 600px;
-        }
-
-        &--left {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-        }
-
-        &--right {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-        }
+    &:focus,
+    &:active {
+      outline: none;
+      border: none;
     }
 
-    &__list {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        z-index: 1000;
-        overflow: hidden;
-        transform: translateY(-100%);
-        transition: all .6s;
+    span {
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: #fff;
+      transition: all 0.3s;
 
-        &--active {
-            transform: translateY(0);
-            background: #fff;
-        }
+      &:first-child {
+        transform: translateY(8px);
+      }
 
-        &--active ~ .nav__hamburger span:first-child {
-            transform: rotate(45deg);
-        }
+      &:last-child {
+        transform: translateY(-8px);
+      }
 
-        &--active ~ .nav__hamburger span:nth-child(2) {
-            transform: translateX(100px);
-            opacity: 0;
-        }
-
-        &--active ~ .nav__hamburger span:last-child {
-            transform: rotate(-45deg);
-        }
+      // &:first-child {
+      //     transform: translateY(8px);
+      // }
     }
-
-    &__link {
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 35px;
-        transition: all .3s;
-        user-select: none;
-        padding: 0 1rem;
-        background: #fe1a93;
-        margin-bottom: 50px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-
-        &--active {
-            background: #000;
-        }
-
-        &:hover {
-            background: #000;
-        }
-    }
-
-    &__item {
-
-        &:not(:last-child) .nav__link {
-            margin-bottom: 50px;
-        }
-    }
-
-
-    &__hamburger {
-        position: relative;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        z-index: 2000;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background: #222;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        outline: none;
-        border: none;
-
-        &:focus, &:active {
-            outline: none;
-            border: none;
-        }
-
-        span {
-            position: absolute;
-            width: 25px;
-            height: 2px;
-            background: #fff;
-            transition: all .3s;
-
-            &:first-child {
-                transform: translateY(8px);
-            }
-
-            &:last-child {
-                transform: translateY(-8px);
-            }
-
-            // &:first-child {
-            //     transform: translateY(8px);
-            // }
-        }
-    }
+  }
 }

@@ -14,27 +14,13 @@ const Contact = ({dark}) => {
                             <div className="contact__container">
                                 <div className="gallery__heading-wrapper" style={{alignItems: "flex-start"}}>
                                     <div className="gallery__heading">
-                                        <h1>Get in Touch</h1>
+                                        <h1>Find Us on Map</h1>
                                     </div>
                                 </div>
-                                <div className="contact__top">
-                                    <div className="contact__paragraph">
-                                        <p>
-                                        We appreciate each customer and we are proud that 60% of clients come back to work with us again.
-                                        </p>
-                                    </div>
-
-                                    <div className="contact__details">
-                                        <a href="mailto:info@studiokalasangam.com" className="contact__link"><IoIosCall className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
-                                        <a href="mailto:info@studiokalasangam.com" className="contact__link"><HiMail className="contact__icons" color="#D91D52" />info@studiokalasangam.com</a>
-                                        <a href="mailto:info@studiokalasangam.com" className="contact__link"><ImWhatsapp className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
-                                    </div>
-                                </div>
+                                
 
                                 <div className="contact__bottom">
-                                    <div className="contact__secondary-heading">
-                                        <h3>Find Us on Map</h3>
-                                    </div>
+                                    
 
                                     <div className="contact__paragraph" style={{marginBottom: 0}}>
                                         <p>Via Birkenweg 37, Bruck, Erlangen 91058</p>
@@ -52,14 +38,20 @@ const Contact = ({dark}) => {
                             <div className="contact__container">
                                 <div className="gallery__heading-wrapper">
                                     <div className="gallery__heading">
-                                        <h1>You Can Mail Us</h1>
+                                        <h1>Contact us</h1>
                                     </div>
                                 </div>
 
                                 <div className="contact__paragraph">
                                     <p>
-                                    We are always looking for a awesome people.
+                                    Get in touch to know more about joining our team, dance classes and performances.
                                     </p>
+                                </div>
+
+                                <div className="contact__details">
+                                        <a href="tel:+15555055050" className="contact__link"><IoIosCall className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
+                                        <a href="mailto:info@studiokalasangam.com" className="contact__link"><HiMail className="contact__icons" color="#D91D52" />info@studiokalasangam.com</a>
+                                        <a href="https://api.whatsapp.com/send?phone=+15555055050" className="contact__link"><ImWhatsapp className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
                                 </div>
 
                                 <form className="contact__form">
@@ -68,8 +60,8 @@ const Contact = ({dark}) => {
                                         <input type="text" placeholder="Your name" />
                                     </div>
                                     <div className="contact__form-group">
-                                        <label className="contact__label" htmlFor="name">MOBILE</label>
-                                        <input type="text" placeholder="Your mobile" />
+                                        <label className="contact__label" htmlFor="name">SUBJECT</label>
+                                        <input type="text" placeholder="Subject" />
                                     </div>
                                     <div className="contact__form-group">
                                         <label className="contact__label" htmlFor="name">MESAGE</label>

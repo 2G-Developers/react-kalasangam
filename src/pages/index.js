@@ -37,8 +37,7 @@ const IndexPage = () => {
         <Founder data={FounderPageData} />
         <Team data={TeamData} />
         <Gallery data={GalleryData} />
-        {/* <Videos data={VideosData} /> */}
-        <Event data={EventData} />
+        {/* <Event data={EventData} /> */}
         <Testimonials data={testimonialsData} />
         <Contact />
         <Footer />

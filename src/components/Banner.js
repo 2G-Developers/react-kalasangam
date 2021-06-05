@@ -62,7 +62,7 @@ const Banner = ({slides}) => {
                         <div className="dancing__letter dancing__letter--third"><span className="dancing__hand--left"></span>A<span className="dancing__hand--right"></span></div>
                         <div className="dancing__letter dancing__letter--fourth"><span className="dancing__hand--left"></span>M<span className="dancing__hand--right"></span></div>
                         <br/>
-                        <Link to="/contact" className="banner__button">Get in touch</Link>
+                        <Link to="/contact" className="banner__button">Contact us</Link>
                     </div>
                     {lightActive ?<div className="banner__disco"></div>: null}
                 </div>

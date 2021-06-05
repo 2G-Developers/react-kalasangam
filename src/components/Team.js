@@ -47,9 +47,9 @@ const Team = ({data, dark}) => {
                         <div className="gallery__heading team__animate">
                             <h1>{data.heading}</h1>
                         </div>
-                        <div className="gallery__sub-heading team__animate">
+                        {/* <div className="gallery__sub-heading team__animate">
                             <h3>{data.subHeading}</h3>
-                        </div>
+                        </div> */}
                     {/* </Fade> */}
                 </div>
                 <div className="row team__row">

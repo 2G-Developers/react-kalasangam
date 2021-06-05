@@ -9,9 +9,7 @@ const Testimonials = ({data, isPage}) => {
                 <div className="gallery__heading gallery__animate">
                     <h1>Testimonials</h1>
                 </div>
-                <div className="gallery__sub-heading gallery__animate">
-                    <h3>Take a look at our customer feedback</h3>
-                </div>
+                
             </div>
             <div className="container">
 
