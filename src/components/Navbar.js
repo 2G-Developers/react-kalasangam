@@ -25,7 +25,7 @@ const Navbar = () => {
     //     }
     // }, [changeBackground])
     useEffect(() => {
-        setActiveNav(window.location.pathname)
+        setActiveNav(window.location.pathname + window.location.hash)
         window.addEventListener('scroll', changeBackground)
 
         return () => {

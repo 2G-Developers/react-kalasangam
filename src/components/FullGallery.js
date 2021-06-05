@@ -22,7 +22,7 @@ const FullGallery = ({data}) => {
                         </TabList>
 
                         <TabPanel>
-                            <div className="fullgallery__wrapper">
+                            <div className="fullgallery__wrapper" id="dance">
                                 {
                                     data.gallery.map((gallery, index) => (
                                         // <Fade bottom duration={1200} key={index}>

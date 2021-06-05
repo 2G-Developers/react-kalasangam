@@ -5,11 +5,11 @@ export const menuData = [
     },
     {
         title: 'About',
-        link: '/about'
+        link: '/about#studiokalasangam'
     },
     {
         title: 'Founder',
-        link: '/founder'
+        link: '/founder#anushree'
     },
     {
         title: 'Faculty',
@@ -17,7 +17,7 @@ export const menuData = [
     },
     {
         title: 'gallery',
-        link: '/gallery'
+        link: '/gallery#dance'
     },
     {
         title: 'Testimonials',

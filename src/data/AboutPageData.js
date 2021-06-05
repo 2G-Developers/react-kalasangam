@@ -1,6 +1,7 @@
 // import TeamImage from '../images/7-edit.jpg'
 
 export const AboutPageData = {
+    id:"studiokalasangam",
     heading: 'StudioKalasangam',
     shortDescription: " StudioKalaSangam is a group of vivacious individuals from Germany bonded closely together by their common love for dancing. The group spearheaded by Anushree Gour started making its presence felt in 2017. Since its inception, the team has now grown into a group consisting of enthusiastic talented dancers and choreographers. The team has been encouraged and provided with many amazing opportunities from the onset.",
     paragraph: [

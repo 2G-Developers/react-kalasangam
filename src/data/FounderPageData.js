@@ -1,6 +1,7 @@
 // import FounderImage from '../images/founder.jpg'
 
 export const FounderPageData = {
+    id:"anushree",
     heading: 'Anushree Gour',
     shortDescription: [
         "I began dancing at a very young age and have been cherishing it since then! With having many years of experience in dancing and choreography, i have now reached a point where i established my own dance studio in germany. My journey has been a rollercoaster from the start but ever since my talented team joined me, together we have been able to persevere the growth of StudioKalaSangam and achieved greater heights."

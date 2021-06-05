@@ -1,19 +1,8 @@
-import React, {useEffect, useRef} from 'react'
+import React from 'react'
 // import Fade from 'react-reveal/Fade';
 
 
-const Page = ({data, autoScroll}) => {
-    const toFocusElement = useRef(null)
-    useEffect(() => {
-        setTimeout(() => {
-            autoScroll && toFocusElement && toFocusElement.current.scrollIntoView({
-                behaviour: "smooth",
-                block: "center",
-                inline: "nearest"
-            })
-        }, 500)
-        
-    }, [])
+const Page = ({data}) => {
 
     return (
         <section className="page">
@@ -21,7 +10,7 @@ const Page = ({data, autoScroll}) => {
                 <img src={data.banner} alt={data.alt} className="page__image" />
             </div>
 
-            <div ref={toFocusElement} className="container">
+            <div className="container" id={data?.id}>
                 <div className="row">
                     <div className="page__content">
                         {/* <Fade top duration={1200}> */}
