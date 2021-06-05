@@ -39,7 +39,7 @@ const Videos = ({data}) => {
                     </Slider>
                 </div>
                     <div className="founder__cta" style={{paddingTop: "2.5rem"}}>
-                        <a href="https://www.youtube.com/channel/UC-fMpIJOmNPJNPh_FZeWUWQ" className="founder__button gallery__animate" target="_blank" rel="noreferrer">Watch More on Youtube</a>
+                        <a href="https://youtube.com/c/StudioKalaSangam" className="founder__button gallery__animate" target="_blank" rel="noreferrer">Watch More on Youtube</a>
                     </div>
             {/* </div> */}
         </section>
