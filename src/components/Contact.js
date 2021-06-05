@@ -49,9 +49,9 @@ const Contact = ({dark}) => {
                                 </div>
 
                                 <div className="contact__details">
-                                        <a href="tel:+15555055050" className="contact__link"><IoIosCall className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
+                                        <a href="tel:00491726188531" className="contact__link"><IoIosCall className="contact__icons" color="#D91D52" />(0049) 1726188531</a>
                                         <a href="mailto:info@studiokalasangam.com" className="contact__link"><HiMail className="contact__icons" color="#D91D52" />info@studiokalasangam.com</a>
-                                        <a href="https://api.whatsapp.com/send?phone=+15555055050" className="contact__link"><ImWhatsapp className="contact__icons" color="#D91D52" />+1 555 505 5050</a>
+                                        <a href="https://api.whatsapp.com/send?phone=00491726188531" className="contact__link"><ImWhatsapp className="contact__icons" color="#D91D52" /> (0049) 1726188531</a>
                                 </div>
 
                                 <form className="contact__form">

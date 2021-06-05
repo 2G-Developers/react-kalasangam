@@ -13,17 +13,17 @@ const Footer = () => {
 
                             <ul className="footer__nav">
                                 <li className="footer__item footer__item--icon">
-                                    <a href="https://www.youtube.com/channel/UC-fMpIJOmNPJNPh_FZeWUWQ" target="_blank" rel="noreferrer" className="footer__link">
+                                    <a href="https://youtube.com/c/StudioKalaSangam" target="_blank" rel="noreferrer" className="footer__link">
                                         <ImYoutube color="#fff" />
                                     </a>
                                 </li>
                                 <li className="footer__item footer__item--icon">
-                                    <a href="https://instagram.com/" target="_blank" rel="noreferrer" className="footer__link">
+                                    <a href="https://www.instagram.com/studiokalasangam/" target="_blank" rel="noreferrer" className="footer__link">
                                         <GrInstagram width="1rem" height="1rem" color="#fff" />
                                     </a>
                                 </li>
                                 <li className="footer__item footer__item--icon">
-                                    <a href="https://www.facebook.com/KalaSangamAG/" target="_blank" rel="noreferrer" className="footer__link">
+                                    <a href="https://www.facebook.com/StudioKalaSangamDanceGroup" target="_blank" rel="noreferrer" className="footer__link">
                                         <ImFacebook width="1rem" height="1rem" color="#fff" />
                                     </a>
                                 </li>
