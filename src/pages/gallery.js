@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import FullGallery from '../components/FullGallery'
@@ -7,16 +7,25 @@ import '../styles/main.scss'
 
 import {GalleryData} from '../data/GalleryData'
 
-const gallery = () => {
+const Gallery = () => {
+    const [autoScroll, setAutoScroll] = useState(false)
+
+    useEffect(() => {
+        setAutoScroll(true)
+        return () => {
+            setAutoScroll(false)
+        }
+    }, [])
+
     return (
         <main>
             <title>Gallery</title>
             <Navbar />
-            <FullGallery data={GalleryData} />
+            <FullGallery autoScroll={autoScroll} data={GalleryData} />
             <Contact />
             <Footer />
         </main>
     )
 }
 
-export default gallery
+export default Gallery

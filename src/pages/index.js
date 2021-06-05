@@ -7,7 +7,7 @@ import Team from '../components/Team'
 import Gallery from "../components/Gallery"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
-import Event from "../components/Event"
+// import Event from "../components/Event"
 // import Videos from "../components/Videos"
 import Testimonials from "../components/Testimonials"
 import ErrorBoundary from "../components/ErrorBoundary"
@@ -21,7 +21,7 @@ import { TeamData } from "../data/TeamData"
 import { AboutPageData } from '../data/AboutPageData'
 import { FounderPageData } from '../data/FounderPageData'
 // import { VideosData } from '../data/VideosData'
-import { EventData } from '../data/EventData'
+// import { EventData } from '../data/EventData'
 import { testimonialsData } from '../data/TestimonialsData'
 
 // markup
