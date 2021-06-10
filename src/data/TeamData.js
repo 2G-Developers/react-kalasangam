@@ -19,7 +19,7 @@ export const TeamData = {
             image: 'https://res.cloudinary.com/gopal1996/image/upload/v1609698845/studioKalasangam/user2_ayqbux.webp',
             position: 'Faculty',
             facebook: 'https://www.facebook.com/ishita.tomer',
-            instagram: ''
+            instagram: 'https://www.instagram.com/ishitatomer'
         },
         {
             name: 'Vineetha Rajendran',

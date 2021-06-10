@@ -62,7 +62,7 @@ const Team = ({data, dark}) => {
                                         <div className="team__overlay">
                                             <div className="team__icon">
                                                 <a href={team.facebook} className="team__link" aria-label="social media"><FaFacebookF /></a>
-                                                <a href={team.instagram} className="team__link" aria-label="social media"><GrInstagram /></a>
+                                                {team.instagram ? <a href={team.instagram} className="team__link" aria-label="social media"><GrInstagram /></a> : null}
                                             </div>
                                         </div>
                                     </div>
